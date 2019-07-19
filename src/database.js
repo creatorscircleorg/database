@@ -1,17 +1,7 @@
 import React, { Component } from 'react';
-import MUIDataTable from 'mui-datatables'; //TODO: consider other options (firebase, mongodb)
+import MUIDataTable from 'mui-datatables'; //TODO: other options: firebase, mongodb
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
-
-/*
-TODO (technical):
-    -) try to get rid of website column (button in the title box?) -> would also make description column wider
-*/
-
-/*
-TODO (nontechnical):
-    -) definitions for column titles
-*/
 
 class Database extends React.Component {
     render() {
@@ -28,7 +18,7 @@ class Database extends React.Component {
             },
             {
                 name: "award_amount",
-                label: "Scholarship or Award Amount (USD)",
+                label: "Scholarship Amount (USD)",
                 options: {filter: true, sort: true}
             },
             {
@@ -69,7 +59,12 @@ class Database extends React.Component {
             {
                 name: "website",
                 label: "Website",
-                options: {filter: true, sort: true, hint: "Link to website"}
+                options: {
+                    filter: true, 
+                    sort: true, 
+                    display: "false",
+                    hint: "Link to website"
+                }
             }
         ];
 
@@ -81,7 +76,6 @@ class Database extends React.Component {
             selectableRows: 'false',
             print: 'false',
             download: 'false',
-            //TODO: textLabels (User provided labels to localize text)
             isRowSelectable: (dataIndex) => {
                 return false;
             },
@@ -94,11 +88,12 @@ class Database extends React.Component {
             <div>
                 <br />
                 <Link to="/">
-                    <Button variant="outline-danger">
+                    <Button variant = "outline-success" size = "lg">
                         Back
                     </Button>
                 </Link>
-                <h1>Opportunities Database</h1> 
+                <br />
+                <h2>Opportunities Database</h2> 
                 <MUIDataTable
                     data={data}
                     columns={columns}

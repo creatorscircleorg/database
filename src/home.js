@@ -2,33 +2,35 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
 
-//TODO: stylize (bootstrap) + ./css sheet
-
-//TODO: deploy to gh-pages
-
 const titleStyle = {
-    top: '10%',
-    //font??
+    position: 'absolute',
+    top: '40%',
+    left: '35%',
 }
 
 const subtitleStyle = {
-    top: '20%',
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
     fontSize: '20px',
-    //font??
 }
 
 const databaseStyle = {
-    top: '50%',
+    position: 'absolute',
+    top: '65%',
+    left: '40%',
 }
 
 const glossaryStyle = {
-    bottom: '10%',
+    position: 'absolute',
+    top: '65%',
+    left: '60%',
 }
 
 function ViewDatabase() {
     return (
         <Link to="/database">
-            <Button variant = "outline-danger">
+            <Button variant = "outline-success" size = "lg">
                 Database
             </Button>
         </Link>
@@ -38,7 +40,7 @@ function ViewDatabase() {
 function ViewGlossary() {
     return (
         <Link to="/glossary">
-            <Button variant = "outline-danger">
+            <Button variant = "outline-success" size = "lg">
                 Glossary
             </Button>
         </Link>
@@ -53,7 +55,7 @@ class Home extends React.Component {
         return (
             <div>
                 <h1 style={titleStyle}>
-                    Creators Circle
+                    Creators Circle:
                 </h1>
                 <h2 style={subtitleStyle}>
                     An Opportunities Database for High School Students
@@ -70,6 +72,5 @@ class Home extends React.Component {
         )
     }
 }
-
 
 export default Home;
