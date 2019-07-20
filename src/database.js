@@ -5,57 +5,104 @@ import {Link} from 'react-router-dom';
 
 class Database extends React.Component {
     render() {
+        const data = require('./data_2.json');
+
         const columns = [
             {
                 name: "title",
                 label: "Title",
-                options: {filter: true, sort: true}
+                options: {
+                    filter: true, 
+                    sort: true,
+                    customBodyRender: (value, tableMeta, updateValue) => {
+                        let opp_link;
+                        for (let index = 0; index < data.length; index++) {
+                            let cur_item = data[index];
+                            if (cur_item.title == value) {
+                                opp_link = cur_item.website;
+                                break;
+                            }
+                        }
+                        return (
+                            <a href={opp_link}>{value}</a>
+                        );
+                    }
+                },
             },
             {
                 name: "grade_level",
                 label: "Grade Level",
-                options: {filter: true, sort: true, hint: "Grade levels this opportunity is open to"}
+                options: {
+                    filter: true, 
+                    sort: true, 
+                    hint: "Grade levels this opportunity is open to"
+                }
             },
             {
                 name: "award_amount",
                 label: "Scholarship Amount (USD)",
-                options: {filter: true, sort: true}
+                options: {
+                    filter: true, 
+                    sort: true
+                }
             },
             {
                 name: "deadline",
                 label: "Application Deadline",
-                options: {filter: true, sort: true}
+                options: {
+                    filter: true, 
+                    sort: true
+                }
             },
             {
                 name: "discipline",
                 label: "Discipline",
-                options: {filter: true, sort: true}
+                options: {
+                    filter: true, 
+                    sort: true
+                }
             },
             {
                 name: "opp_type",
                 label: "Opportunity Type",
-                options: {filter: true, sort: true}
+                options: {
+                    filter: true, 
+                    sort: true
+                }
             },
             {
                 name: "program_dates",
                 label: "Program Dates/Length",
-                options: {filter: true, sort: true}
+                options: {
+                    filter: true, 
+                    sort: true
+                }
             },
             {
                 name: "program_cost",
                 label: "Program Cost (USD)",
-                options: {filter: true, sort: true}
+                options: {
+                    filter: true, 
+                    sort: true
+                }
             },
             {
                 name: "location_language",
                 label: "Location and Language",
-                options: {filter: true, sort: true}
+                options: {
+                    filter: true, 
+                    sort: true
+                }
             },
             {
                 name: "description",
                 label: "Description",
-                options: {filter: true, sort: true}
+                options: {
+                    filter: true, 
+                    sort: true
+                }
             },
+            /*
             {
                 name: "website",
                 label: "Website",
@@ -66,9 +113,8 @@ class Database extends React.Component {
                     hint: "Link to website"
                 }
             }
+            */
         ];
-
-        const data = require('./data_2.json');
 
         const options = {
             filterType: 'checkbox',
