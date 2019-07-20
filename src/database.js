@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MUIDataTable from 'mui-datatables'; //TODO: other options: firebase, mongodb
+import MUIDataTable from 'mui-datatables';
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
 
@@ -98,8 +98,8 @@ class Database extends React.Component {
                 name: "description",
                 label: "Description",
                 options: {
-                    filter: true, 
-                    sort: true
+                    filter: false, 
+                    sort: false
                 }
             },
             /*
@@ -117,11 +117,9 @@ class Database extends React.Component {
         ];
 
         const options = {
-            filterType: 'checkbox',
-            responsive: 'scroll',
-            selectableRows: 'false',
-            print: 'false',
-            download: 'false',
+            filterType: 'dropdown',
+            resizableColumns: true,
+            selectableRows: 'none',
             isRowSelectable: (dataIndex) => {
                 return false;
             },
