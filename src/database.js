@@ -10,7 +10,7 @@ class Database extends React.Component {
         const columns = [
             {
                 name: "title",
-                label: "Title",
+                label: "Opportunity",
                 options: {
                     filter: true, 
                     sort: true,
@@ -30,17 +30,8 @@ class Database extends React.Component {
                 },
             },
             {
-                name: "grade_level",
-                label: "Grade Level",
-                options: {
-                    filter: true, 
-                    sort: true, 
-                    hint: "Grade levels this opportunity is open to"
-                }
-            },
-            {
-                name: "award_amount",
-                label: "Scholarship Amount (USD)",
+                name: "opp_type",
+                label: "Opportunity Type",
                 options: {
                     filter: true, 
                     sort: true
@@ -55,6 +46,24 @@ class Database extends React.Component {
                 }
             },
             {
+                name: "grade_level",
+                label: "Grade Level",
+                options: {
+                    filter: true, 
+                    sort: true, 
+                    hint: "Grade levels this opportunity is open to"
+                }
+            },
+            /*
+            {
+                name: "award_amount",
+                label: "Scholarship Amount (USD)",
+                options: {
+                    filter: true, 
+                    sort: true
+                }
+            },
+            {
                 name: "discipline",
                 label: "Discipline",
                 options: {
@@ -62,22 +71,16 @@ class Database extends React.Component {
                     sort: true
                 }
             },
-            {
-                name: "opp_type",
-                label: "Opportunity Type",
-                options: {
-                    filter: true, 
-                    sort: true
-                }
-            },
+            */
             {
                 name: "program_dates",
-                label: "Program Dates/Length",
+                label: "Program Length",
                 options: {
                     filter: true, 
                     sort: true
                 }
             },
+            /*
             {
                 name: "program_cost",
                 label: "Program Cost (USD)",
@@ -86,9 +89,10 @@ class Database extends React.Component {
                     sort: true
                 }
             },
+            */
             {
                 name: "location_language",
-                label: "Location and Language",
+                label: "Location",
                 options: {
                     filter: true, 
                     sort: true
