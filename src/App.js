@@ -1,10 +1,4 @@
 import React, { Component } from 'react';
-/*
-import {HashRouter, Route} from 'react-router-dom';
-import Home from './home';
-import Database from './database';
-import Glossary from './glossary';
-*/
 import MUIDataTable from 'mui-datatables';
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
@@ -61,24 +55,6 @@ class App extends React.Component {
                 hint: "Grade levels this opportunity is open to"
             }
         },
-        /*
-        {
-            name: "award_amount",
-            label: "Scholarship Amount (USD)",
-            options: {
-                filter: true, 
-                sort: true
-            }
-        },
-        {
-            name: "discipline",
-            label: "Discipline",
-            options: {
-                filter: true, 
-                sort: true
-            }
-        },
-        */
         {
             name: "program_dates",
             label: "Program Length",
@@ -87,16 +63,6 @@ class App extends React.Component {
                 sort: true
             }
         },
-        /*
-        {
-            name: "program_cost",
-            label: "Program Cost (USD)",
-            options: {
-                filter: true, 
-                sort: true
-            }
-        },
-        */
         {
             name: "location_language",
             label: "Location",
@@ -113,18 +79,6 @@ class App extends React.Component {
                 sort: false
             }
         },
-        /*
-        {
-            name: "website",
-            label: "Website",
-            options: {
-                filter: true, 
-                sort: true, 
-                display: "false",
-                hint: "Link to website"
-            }
-        }
-        */
     ];
 
     const options = {
@@ -152,33 +106,5 @@ class App extends React.Component {
     )
   }
 }
-
-/*
-class App extends React.Component {
-  render() {
-    return (
-      <HashRouter>
-        <div>
-          <Route exact={true} path ='/' render={() => (
-            <div className="App">
-            <Home />
-            </div>
-          )} />
-          <Route exact={true} path = '/database' render={() => (
-            <div className="App">
-              <Database />
-            </div>
-          )} />
-          <Route exact={true} path = '/glossary' render={() => (
-            <div className="App">
-              <Glossary />
-            </div>
-          )} />
-        </div>
-      </HashRouter>
-    );
-  }
-}
-*/
 
 export default App;
