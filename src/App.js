@@ -2,9 +2,21 @@ import React, { Component } from 'react';
 import MUIDataTable from 'mui-datatables';
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
+import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
 
 class App extends React.Component {
+    getMuiTheme = () => createMuiTheme({
+        overrides: {
+            MuiButtonBase: {
+                root: {
+                    //backgroundColor: "#FF0000"
+                }
+            }
+        }
+    })
+
+
   render() {
     const data = require('./data_2.json');
 
@@ -97,11 +109,13 @@ class App extends React.Component {
         <div>
             <br />
             <h2>Opportunities Database</h2> 
-            <MUIDataTable
-                data={data}
-                columns={columns}
-                options={options}
-            />
+            <MuiThemeProvider theme={this.getMuiTheme()}>
+                <MUIDataTable
+                    data={data}
+                    columns={columns}
+                    options={options}
+                />
+            </MuiThemeProvider>
         </div>
     )
   }
