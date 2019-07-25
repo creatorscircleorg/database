@@ -46,7 +46,7 @@ class App extends React.Component {
             name: "opp_type",
             label: "Opportunity Type",
             options: {
-                filter: true, 
+                filter: false, 
                 sort: true
             }
         },
@@ -54,7 +54,7 @@ class App extends React.Component {
             name: "deadline",
             label: "Application Deadline",
             options: {
-                filter: true, 
+                filter: false, 
                 sort: true
             }
         },
@@ -64,6 +64,17 @@ class App extends React.Component {
             options: {
                 filter: true, 
                 sort: true, 
+                filterOptions: {
+                    names: [9, 10, 11, 12],
+                    logic(grade, filterVal) {
+                        if (grade.includes(filterVal)) {
+                            return false;
+                        } else {
+                            return true;
+                        }
+                    }
+                },
+                filterType: "multiselect",
                 hint: "Grade levels this opportunity is open to"
             }
         },
@@ -71,7 +82,7 @@ class App extends React.Component {
             name: "program_dates",
             label: "Program Length",
             options: {
-                filter: true, 
+                filter: false, 
                 sort: true
             }
         },
@@ -97,6 +108,7 @@ class App extends React.Component {
         filterType: 'dropdown',
         resizableColumns: true,
         selectableRows: 'none',
+        rowsPerPageOptions: [10, 20, 30, 40, 50],
         isRowSelectable: (dataIndex) => {
             return false;
         },
