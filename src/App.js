@@ -25,7 +25,7 @@ class App extends React.Component {
             name: "title",
             label: "Opportunity",
             options: {
-                filter: true, 
+                filter: false, 
                 sort: true,
                 customBodyRender: (value, tableMeta, updateValue) => {
                     let opp_link;
@@ -91,6 +91,7 @@ class App extends React.Component {
             label: "Location",
             options: {
                 filter: true, 
+                filterType: "multiselect",
                 sort: true
             }
         },
