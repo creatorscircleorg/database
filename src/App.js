@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
 import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
+import { isLabeledStatement } from '@babel/types';
 
 class App extends React.Component {
     getMuiTheme = () => createMuiTheme({
@@ -18,7 +19,15 @@ class App extends React.Component {
 
 
   render() {
-    const data = require('./data_2.json');
+    const data = require('./datafile.json');
+
+    const location_names = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
+    "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", 
+    "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", 
+    "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", 
+    "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", 
+    "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "Washington, D.C.", 
+    "West Virginia", "Wisconsin", "Wyoming", "USA", "International"];
 
     const columns = [
         {
@@ -26,7 +35,7 @@ class App extends React.Component {
             label: "Opportunity",
             options: {
                 filter: false, 
-                sort: true,
+                sort: false,
                 customBodyRender: (value, tableMeta, updateValue) => {
                     let opp_link;
                     for (let index = 0; index < data.length; index++) {
@@ -47,7 +56,7 @@ class App extends React.Component {
             label: "Opportunity Type",
             options: {
                 filter: false, 
-                sort: true
+                sort: false
             }
         },
         {
@@ -55,7 +64,7 @@ class App extends React.Component {
             label: "Application Deadline",
             options: {
                 filter: false, 
-                sort: true
+                sort: false
             }
         },
         {
@@ -63,7 +72,7 @@ class App extends React.Component {
             label: "Grade Level",
             options: {
                 filter: true, 
-                sort: true, 
+                sort: false, 
                 filterOptions: {
                     names: [9, 10, 11, 12],
                     logic(grade, filterVal) {
@@ -83,7 +92,7 @@ class App extends React.Component {
             label: "Program Length",
             options: {
                 filter: false, 
-                sort: true
+                sort: false
             }
         },
         {
@@ -92,7 +101,30 @@ class App extends React.Component {
             options: {
                 filter: true, 
                 filterType: "multiselect",
-                sort: true
+                sort: false,
+                filterOptions: {
+                    names: location_names,
+                    logic(location, filterVal) {
+                        let isInternational = true;
+                        let hasInternationalItem = false; //has at least one international item
+                        let locationArray = location.split(", ");
+                        for (let index = 0; index < locationArray.length; index++) {
+                            if (location_names.includes(locationArray[index])) {
+                                isInternational = false;
+                            }
+                            if (isInternational && locationArray[index].length != 0) {
+                                hasInternationalItem = true;
+                            }
+                        }
+
+                        if (location.includes(filterVal) 
+                            || (filterVal == "International" && hasInternationalItem)) {
+                            return false;
+                        } else {
+                            return true;
+                        }
+                    }
+                }
             }
         },
         {
@@ -107,7 +139,6 @@ class App extends React.Component {
 
     const options = {
         filterType: 'dropdown',
-        resizableColumns: true,
         selectableRows: 'none',
         rowsPerPageOptions: [10, 20, 30, 40, 50],
         isRowSelectable: (dataIndex) => {
