@@ -26,7 +26,7 @@ class App extends React.Component {
     "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", 
     "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", 
     "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", 
-    "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "Washington, D.C.", 
+    "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "Washington D.C.", 
     "West Virginia", "Wisconsin", "Wyoming", "USA", "International"];
 
     const columns = [
@@ -64,7 +64,7 @@ class App extends React.Component {
             label: "Application Deadline",
             options: {
                 filter: false, 
-                sort: false
+                sort: true
             }
         },
         {
@@ -75,12 +75,14 @@ class App extends React.Component {
                 sort: false, 
                 filterOptions: {
                     names: [9, 10, 11, 12],
-                    logic(grade, filterVal) {
-                        if (grade.includes(filterVal)) {
-                            return false;
-                        } else {
-                            return true;
+                    logic(grade, filter) {
+                        for (let i = 0; i < filter.length; i++) {
+                            let val = filter[i];
+                            if (!grade.includes(val)) {
+                                return true;
+                            }
                         }
+                        return false;
                     }
                 },
                 filterType: "multiselect",
@@ -104,25 +106,32 @@ class App extends React.Component {
                 sort: false,
                 filterOptions: {
                     names: location_names,
-                    logic(location, filterVal) {
-                        let isInternational = true;
-                        let hasInternationalItem = false; //has at least one international item
+                    logic(location, filter) {
+                        if (location.length == 0) {
+                            return true;
+                        }
+
+                        let isIntl = true;
+                        let hasIntlItem = false; //has at least one international item
                         let locationArray = location.split(", ");
-                        for (let index = 0; index < locationArray.length; index++) {
-                            if (location_names.includes(locationArray[index])) {
-                                isInternational = false;
+                        for (let i = 0; i < locationArray.length; i++) {
+                            isIntl = true;
+                            let cur_location = locationArray[i];
+                            if (location_names.includes(cur_location)) {
+                                isIntl = false;
                             }
-                            if (isInternational && locationArray[index].length != 0) {
-                                hasInternationalItem = true;
+                            if (isIntl && cur_location.length > 0) {
+                                hasIntlItem = true;
                             }
                         }
 
-                        if (location.includes(filterVal) 
-                            || (filterVal == "International" && hasInternationalItem)) {
-                            return false;
-                        } else {
-                            return true;
+                        for (let i = 0; i < filter.length; i++) {
+                            let val = filter[i];
+                           if (location.includes(val) || (val == "International" && hasIntlItem)) {
+                               return false;
+                           }
                         }
+                        return true;
                     }
                 }
             }
