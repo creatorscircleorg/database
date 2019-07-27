@@ -6,28 +6,46 @@ import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
 import { isLabeledStatement } from '@babel/types';
 
+const location_names = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
+"Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", 
+"Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", 
+"Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", 
+"North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", 
+"South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "Washington D.C.", 
+"West Virginia", "Wisconsin", "Wyoming", "USA", "International"];
+
+let focus_areas_list = [];
+
+/*
+function find_focus_areas(data) {
+    for (let i = 0; i < data.length; i++) {
+        let cur = data[i].focus_area; //unabridged list of focus areas
+        let cur_array = cur.split(", "); //converted into array of focus areas
+        for (let j = 0; j < cur_array.length; j++) {
+            let cur_item = cur_array[j]; //individual focus area within cur_array
+            if (!focus_areas_list.includes(cur_item)) {
+                focus_areas_list.push(cur_item);
+            }
+        }
+    }
+}
+*/
+
 class App extends React.Component {
     getMuiTheme = () => createMuiTheme({
         overrides: {
             MuiButtonBase: {
                 root: {
-                    //backgroundColor: "#FF0000"
+                    //backgroundColor: "#105EA8"
                 }
             }
         }
     })
 
-
   render() {
     const data = require('./datafile.json');
 
-    const location_names = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
-    "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", 
-    "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", 
-    "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", 
-    "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", 
-    "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "Washington D.C.", 
-    "West Virginia", "Wisconsin", "Wyoming", "USA", "International"];
+    //find_focus_areas(data);
 
     const columns = [
         {
@@ -36,6 +54,7 @@ class App extends React.Component {
             options: {
                 filter: false, 
                 sort: false,
+                hint: "Program name and hyperlink",
                 customBodyRender: (value, tableMeta, updateValue) => {
                     let opp_link;
                     for (let index = 0; index < data.length; index++) {
@@ -56,7 +75,30 @@ class App extends React.Component {
             label: "Opportunity Type",
             options: {
                 filter: false, 
-                sort: false
+                sort: false,
+                hint: "Programmatic format of opportunity"
+            }
+        },
+        {
+            name: "focus_area",
+            label: "Focus Area",
+            options: {
+                filter: true,
+                sort: false,
+                filterOptions: {
+                    names: focus_areas_list,
+                    logic(focus_areas, filter) {
+                        let focus_areas_array = focus_areas.split(", ");
+                        for (let i = 0; i < focus_areas_array.length; i++) {
+                            let item = focus_areas_array[i];
+                            if (item.equals(filter)) {
+                                return false;
+                            }
+                        }
+                        return true;
+                    }
+                },
+                hint: "Issue area through which a program hopes to create impact"
             }
         },
         {
@@ -64,7 +106,8 @@ class App extends React.Component {
             label: "Application Deadline",
             options: {
                 filter: false, 
-                sort: true
+                sort: true,
+                hint: "Date applications are due"
             }
         },
         {
@@ -86,15 +129,7 @@ class App extends React.Component {
                     }
                 },
                 filterType: "multiselect",
-                hint: "Grade levels this opportunity is open to"
-            }
-        },
-        {
-            name: "program_dates",
-            label: "Program Length",
-            options: {
-                filter: false, 
-                sort: false
+                hint: "Grade level to which this opportunity is open"
             }
         },
         {
@@ -104,6 +139,7 @@ class App extends React.Component {
                 filter: true, 
                 filterType: "multiselect",
                 sort: false,
+                hint: "Geographic region in which program is based",
                 filterOptions: {
                     names: location_names,
                     logic(location, filter) {
@@ -141,7 +177,8 @@ class App extends React.Component {
             label: "Description",
             options: {
                 filter: false, 
-                sort: false
+                sort: false,
+                hint: "Summary of opportunity"
             }
         },
     ];
@@ -149,7 +186,7 @@ class App extends React.Component {
     const options = {
         filterType: 'dropdown',
         selectableRows: 'none',
-        rowsPerPageOptions: [10, 20, 30, 40, 50],
+        rowsPerPageOptions: [5, 10, 15, 25],
         isRowSelectable: (dataIndex) => {
             return false;
         },
@@ -161,7 +198,6 @@ class App extends React.Component {
     return (
         <div>
             <br />
-            <h2>Opportunities Database</h2> 
             <MuiThemeProvider theme={this.getMuiTheme()}>
                 <MUIDataTable
                     data={data}
