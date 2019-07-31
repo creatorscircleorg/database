@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
 import MUIDataTable from 'mui-datatables';
-import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
 import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
 import { isLabeledStatement } from '@babel/types';
 
-const location_names = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
+const all_locations = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
 "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", 
 "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", 
 "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", 
 "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", 
 "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "Washington D.C.", 
 "West Virginia", "Wisconsin", "Wyoming", "USA", "International"];
+
+const us_states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
+"Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", 
+"Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", 
+"Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", 
+"North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", 
+"South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "Washington D.C.", 
+"West Virginia", "Wisconsin", "Wyoming"];
 
 let focus_areas_list = [];
 
@@ -21,6 +28,7 @@ function find_focus_areas(data) {
     for (let i = 0; i < data.length; i++) {
         let cur = data[i].focus_area; //unabridged list of focus areas
         let cur_array = cur.split(", "); //converted into array of focus areas
+        //TODO: might need to re-implement split functionality
         for (let j = 0; j < cur_array.length; j++) {
             let cur_item = cur_array[j]; //individual focus area within cur_array
             if (!focus_areas_list.includes(cur_item)) {
@@ -28,17 +36,33 @@ function find_focus_areas(data) {
             }
         }
     }
+
 }
 */
 
 class App extends React.Component {
+
     getMuiTheme = () => createMuiTheme({
         overrides: {
-            MuiButtonBase: {
+            MuiTableCell: {
+                head: {
+                    fontWeight: "bold",
+                },
                 root: {
-                    //backgroundColor: "#105EA8"
+                    fontFamily: "Helvetica Neue",
                 }
-            }
+            },
+            MuiIconButton: {
+                colorInherit: {
+                    color: "#105EA8",
+                }
+            },
+            MuiSvgIcon: {
+                fontSizeSmall: {
+                    color: "#FFFFFF",
+                    backgroundColor: "#FFFFFF",
+                }
+            },
         }
     })
 
@@ -74,7 +98,8 @@ class App extends React.Component {
             name: "opp_type",
             label: "Opportunity Type",
             options: {
-                filter: false, 
+                filter: true, 
+                filterType: 'multiselect',
                 sort: false,
                 hint: "Programmatic format of opportunity"
             }
@@ -98,6 +123,7 @@ class App extends React.Component {
                         return true;
                     }
                 },
+                filterType: 'multiselect',
                 hint: "Issue area through which a program hopes to create impact"
             }
         },
@@ -141,29 +167,30 @@ class App extends React.Component {
                 sort: false,
                 hint: "Geographic region in which program is based",
                 filterOptions: {
-                    names: location_names,
+                    names: all_locations,
                     logic(location, filter) {
                         if (location.length == 0) {
                             return true;
                         }
 
-                        let isIntl = true;
                         let hasIntlItem = false; //has at least one international item
-                        let locationArray = location.split(", ");
-                        for (let i = 0; i < locationArray.length; i++) {
-                            isIntl = true;
-                            let cur_location = locationArray[i];
-                            if (location_names.includes(cur_location)) {
-                                isIntl = false;
-                            }
-                            if (isIntl && cur_location.length > 0) {
+                        let hasUSItem = false; //has at least one domestic item
+                        let location_arr = location.split(", ");
+                        for (let i = 0; i < location_arr.length; i++) {
+                            let cur_loc = location_arr[i];
+                            if (!all_locations.includes(cur_loc)) {
                                 hasIntlItem = true;
+                            }
+                            if (us_states.includes(cur_loc)) {
+                                hasUSItem = true;
                             }
                         }
 
                         for (let i = 0; i < filter.length; i++) {
-                            let val = filter[i];
-                           if (location.includes(val) || (val == "International" && hasIntlItem)) {
+                            let filter_val = filter[i];
+                           if (location.includes(filter_val) 
+                                || (filter_val == "International" && hasIntlItem)
+                                || (filter_val == "USA" && hasUSItem)) {
                                return false;
                            }
                         }
@@ -178,7 +205,7 @@ class App extends React.Component {
             options: {
                 filter: false, 
                 sort: false,
-                hint: "Summary of opportunity"
+                hint: "Summary of opportunity",
             }
         },
     ];
@@ -186,6 +213,7 @@ class App extends React.Component {
     const options = {
         filterType: 'dropdown',
         selectableRows: 'none',
+        rowsPerPage: 4,
         rowsPerPageOptions: [5, 10, 15, 25],
         isRowSelectable: (dataIndex) => {
             return false;
@@ -197,13 +225,14 @@ class App extends React.Component {
 
     return (
         <div>
-            <br />
-            <MuiThemeProvider theme={this.getMuiTheme()}>
-                <MUIDataTable
-                    data={data}
-                    columns={columns}
-                    options={options}
-                />
+            <MuiThemeProvider theme={
+                this.getMuiTheme()
+            }>
+            <MUIDataTable
+                data={data}
+                columns={columns}
+                options={options}
+            />
             </MuiThemeProvider>
         </div>
     )
