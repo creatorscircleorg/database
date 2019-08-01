@@ -23,12 +23,10 @@ const us_states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Co
 
 let focus_areas_list = [];
 
-/*
 function find_focus_areas(data) {
     for (let i = 0; i < data.length; i++) {
         let cur = data[i].focus_area; //unabridged list of focus areas
         let cur_array = cur.split(", "); //converted into array of focus areas
-        //TODO: might need to re-implement split functionality
         for (let j = 0; j < cur_array.length; j++) {
             let cur_item = cur_array[j]; //individual focus area within cur_array
             if (!focus_areas_list.includes(cur_item)) {
@@ -38,7 +36,6 @@ function find_focus_areas(data) {
     }
 
 }
-*/
 
 class App extends React.Component {
 
@@ -69,7 +66,7 @@ class App extends React.Component {
   render() {
     const data = require('./datafile.json');
 
-    //find_focus_areas(data);
+    find_focus_areas(data);
 
     const columns = [
         {
@@ -114,10 +111,13 @@ class App extends React.Component {
                     names: focus_areas_list,
                     logic(focus_areas, filter) {
                         let focus_areas_array = focus_areas.split(", ");
-                        for (let i = 0; i < focus_areas_array.length; i++) {
-                            let item = focus_areas_array[i];
-                            if (item.equals(filter)) {
-                                return false;
+
+                        for (let i = 0; i < filter.length; i++) {
+                            let filter_val = filter[i];
+                            for (let j = 0; j < focus_areas_array.length; j++) {
+                                if (filter_val == focus_areas_array[j]) {
+                                    return false;
+                                }
                             }
                         }
                         return true;
@@ -213,7 +213,7 @@ class App extends React.Component {
     const options = {
         filterType: 'dropdown',
         selectableRows: 'none',
-        rowsPerPage: 4,
+        rowsPerPage: 5,
         rowsPerPageOptions: [5, 10, 15, 25],
         isRowSelectable: (dataIndex) => {
             return false;
