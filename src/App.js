@@ -11,7 +11,7 @@ const all_locations = ["Alabama", "Alaska", "Arizona", "Arkansas", "California",
 "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", 
 "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", 
 "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "Washington D.C.", 
-"West Virginia", "Wisconsin", "Wyoming", "USA", "International"];
+"West Virginia", "Wisconsin", "Wyoming", "Nationwide", "Global"];
 
 const us_states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
 "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", 
@@ -159,7 +159,7 @@ class App extends React.Component {
             }
         },
         {
-            name: "location_language",
+            name: "location",
             label: "Location",
             options: {
                 filter: true, 
@@ -189,8 +189,8 @@ class App extends React.Component {
                         for (let i = 0; i < filter.length; i++) {
                             let filter_val = filter[i];
                            if (location.includes(filter_val) 
-                                || (filter_val == "International" && hasIntlItem)
-                                || (filter_val == "USA" && hasUSItem)) {
+                                || (filter_val == "Global" && hasIntlItem)
+                                || (filter_val == "Nationwide" && hasUSItem)) {
                                return false;
                            }
                         }
