@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import MUIDataTable from 'mui-datatables';
-import {Link} from 'react-router-dom';
 import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
-import { isLabeledStatement } from '@babel/types';
-import { array } from 'prop-types';
 
 const all_locations = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
 "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", 
@@ -75,7 +72,7 @@ class App extends React.Component {
             label: "Opportunity",
             options: {
                 filter: false, 
-                sort: true,
+                sort: false,
                 hint: "Program name and hyperlink",
                 customBodyRender: (value, tableMeta, updateValue) => {
                     let opp_link;
@@ -232,17 +229,27 @@ class App extends React.Component {
         onRowsDelete: (rowsDeleted) => {
             return;
         },
+        /*
         customSort: (data, colIndex, order) => {
-            if (colIndex == 0) {
+            if (colIndex == 0) { //opportunity title
                 return data.sort((a, b) => {
                     if (a.data[1] == b.data[1]) {
                         return (a.data[colIndex].localeCompare(b.data[colIndex])) * (order === 'desc' ? 1: -1);
                     }
                     return (a.data[1].localeCompare(b.data[1])) * (order === 'desc' ? 1 : -1);
                 });
+            } 
+            /*
+            else if (colIndex == 3) { //application deadline
+                let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
+                "October", "November", "December"];
+                return data.sort((a, b) => {
+                    //TODO: clean spreadsheet for dates
+                    //TODO: implement sorting
+                });
             }
-            return data;
         }
+        */
     };
 
     return (
