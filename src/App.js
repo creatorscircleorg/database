@@ -75,7 +75,7 @@ class App extends React.Component {
             label: "Opportunity",
             options: {
                 filter: false, 
-                sort: false,
+                sort: true,
                 hint: "Program name and hyperlink",
                 customBodyRender: (value, tableMeta, updateValue) => {
                     let opp_link;
@@ -232,10 +232,16 @@ class App extends React.Component {
         onRowsDelete: (rowsDeleted) => {
             return;
         },
-        //data: array, colIndex: number, order: string)
-        //TODO: sort in alphabetical order within opportunity type
         customSort: (data, colIndex, order) => {
-            return array;
+            if (colIndex == 0) {
+                return data.sort((a, b) => {
+                    if (a.data[1] == b.data[1]) {
+                        return (a.data[colIndex].localeCompare(b.data[colIndex])) * (order === 'desc' ? 1: -1);
+                    }
+                    return (a.data[1].localeCompare(b.data[1])) * (order === 'desc' ? 1 : -1);
+                });
+            }
+            return data;
         }
     };
 
