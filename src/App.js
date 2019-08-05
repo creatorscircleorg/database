@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
 import { isLabeledStatement } from '@babel/types';
+import { array } from 'prop-types';
 
 const all_locations = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
 "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", 
@@ -107,6 +108,16 @@ class App extends React.Component {
             options: {
                 filter: true,
                 sort: false,
+                //sort focus areas tags in alphabetical order
+                customBodyRender: (value, tableMeta, updateValue) => {
+                    let values_arr = value.split(", ");
+                    values_arr = values_arr.sort(function(a, b) {
+                        return a.toLowerCase().localeCompare(b.toLowerCase());
+                    });
+                    return (
+                        values_arr.toString()
+                    );
+                },
                 filterOptions: {
                     names: focus_areas_list,
                     logic(focus_areas, filter) {
@@ -220,6 +231,11 @@ class App extends React.Component {
         },
         onRowsDelete: (rowsDeleted) => {
             return;
+        },
+        //data: array, colIndex: number, order: string)
+        //TODO: sort in alphabetical order within opportunity type
+        customSort: (data, colIndex, order) => {
+            return array;
         }
     };
 
