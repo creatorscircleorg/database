@@ -32,7 +32,23 @@ function find_focus_areas(data) {
             }
         }
     }
+}
 
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", 
+"September", "October", "November", "December"];
+
+function find_index_of_date(input, data, colIndex) {
+    let index = 12;
+
+    for (let i = 0; i < months.length; i++) {
+        let cur_month = months[i];
+        if (input.data[colIndex].includes(cur_month)) {
+            index = i;
+            break;
+        }
+    }
+
+    return index;
 }
 
 class App extends React.Component {
@@ -229,27 +245,16 @@ class App extends React.Component {
         onRowsDelete: (rowsDeleted) => {
             return;
         },
-        /*
         customSort: (data, colIndex, order) => {
-            if (colIndex == 0) { //opportunity title
+            if (colIndex == 3) { //application deadline
+
                 return data.sort((a, b) => {
-                    if (a.data[1] == b.data[1]) {
-                        return (a.data[colIndex].localeCompare(b.data[colIndex])) * (order === 'desc' ? 1: -1);
-                    }
-                    return (a.data[1].localeCompare(b.data[1])) * (order === 'desc' ? 1 : -1);
-                });
-            } 
-            /*
-            else if (colIndex == 3) { //application deadline
-                let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
-                "October", "November", "December"];
-                return data.sort((a, b) => {
-                    //TODO: clean spreadsheet for dates
-                    //TODO: implement sorting
+                    let a_index = find_index_of_date(a, data, colIndex);
+                    let b_index = find_index_of_date(b, data, colIndex);
+                    return ((a_index <= b_index) ? 1 : -1) * (order === 'desc' ? 1 : -1);
                 });
             }
         }
-        */
     };
 
     return (
