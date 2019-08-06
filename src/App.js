@@ -127,8 +127,17 @@ class App extends React.Component {
                     values_arr = values_arr.sort(function(a, b) {
                         return a.toLowerCase().localeCompare(b.toLowerCase());
                     });
+                    let focus_areas_str = "";
+                    for (let i = 0; i < values_arr.length; i++) {
+                        if (i == 0) {
+                            focus_areas_str += values_arr[i];
+                        } else {
+                            focus_areas_str += ", " + values_arr[i];
+                        }
+                    }
+
                     return (
-                        values_arr.toString()
+                        focus_areas_str
                     );
                 },
                 filterOptions: {
