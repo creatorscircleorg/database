@@ -322,7 +322,7 @@
  {
    "title": "Paradigm Challenge",
    "opp_type": "Awards Program",
-   "focus_area": "stem, social engagement, innovation",
+   "focus_area": "STEM, social engagement, innovation",
    "deadline": "May 2020",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -442,7 +442,7 @@
  {
    "title": "Toshiba/NSTA ExploraVision Competition",
    "opp_type": "Awards Program",
-   "focus_area": "stem, technology, science",
+   "focus_area": "STEM, technology, science",
    "deadline": "February 2020",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -1172,7 +1172,7 @@
  {
    "title": "Ampronix Scholarship Program",
    "opp_type": "Scholarship Program",
-   "focus_area": "community service, healthcare",
+   "focus_area": "community service, health care",
    "deadline": "May 2020",
    "grade_level": "12",
    "location": "Nationwide",
@@ -1442,7 +1442,7 @@
  {
    "title": "GE-Reagan Foundation Scholarship Program",
    "opp_type": "Scholarship Program",
-   "focus_area": "leadership, drive, integrity, citizenship ",
+   "focus_area": "leadership, drive, integrity, citizenship",
    "deadline": "January 2020",
    "grade_level": "12",
    "location": "Nationwide",
@@ -1462,7 +1462,7 @@
  {
    "title": "Hispanic Scholarship Fund",
    "opp_type": "Scholarship Program",
-   "focus_area": "academic achievement, leadership, hispanic, latino, stem",
+   "focus_area": "academic achievement, leadership, Hispanic, Latino, STEM",
    "deadline": "April 2020",
    "grade_level": "12",
    "location": "Nationwide",
@@ -1472,7 +1472,7 @@
  {
    "title": "Horatio Alger National Scholarship",
    "opp_type": "Scholarship Program",
-   "focus_area": "community service ",
+   "focus_area": "community service",
    "deadline": "October 2019",
    "grade_level": "12",
    "location": "Nationwide",
@@ -1592,7 +1592,7 @@
  {
    "title": "Taco Bell Live Mas Scholarship",
    "opp_type": "Scholarship Program",
-   "focus_area": "innovators, creators, dreamers, world-changers",
+   "focus_area": "innovation, creativity, dreamers, world-changers",
    "deadline": "March 2020",
    "grade_level": "10, 11, 12",
    "location": "Nationwide",
@@ -1672,7 +1672,7 @@
  {
    "title": "ACT",
    "opp_type": "Service Opportunity",
-   "focus_area": "united nations, global citizenship",
+   "focus_area": "United Nations, global citizenship",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -1832,7 +1832,7 @@
  {
    "title": "Appalachian Trail Conservancy",
    "opp_type": "Service Opportunity",
-   "focus_area": "volunteer, apalachia, environment, stewardship",
+   "focus_area": "volunteer, appalachia, environment, stewardship",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -1842,7 +1842,7 @@
  {
    "title": "Art Studio Miami",
    "opp_type": "Service Opportunity",
-   "focus_area": "art, Miami, youth",
+   "focus_area": "arts, Miami, youth",
    "deadline": "N/A",
    "grade_level": "11, 12",
    "location": "Florida",
@@ -1862,7 +1862,7 @@
  {
    "title": "Aspire Afterschool Learning",
    "opp_type": "Service Opportunity",
-   "focus_area": "Virginia, volunteer, reading, math, STEM, mentor",
+   "focus_area": "Virginia, volunteer, reading, mathematics, STEM, mentorship",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Virginia",
@@ -1912,7 +1912,7 @@
  {
    "title": "Bikes Not Bombs",
    "opp_type": "Service Opportunity",
-   "focus_area": "Boston, volunteer, bikes",
+   "focus_area": "Boston, volunteer, bicycle",
    "deadline": "N/A",
    "grade_level": "11, 12",
    "location": "Massachusetts",
@@ -1922,7 +1922,7 @@
  {
    "title": "Boys & Girls Club",
    "opp_type": "Service Opportunity",
-   "focus_area": "volunteer, mentor",
+   "focus_area": "volunteer, mentorship",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -1952,7 +1952,7 @@
  {
    "title": "By the Hand Club",
    "opp_type": "Service Opportunity",
-   "focus_area": "volunteer, mentor, Chicago",
+   "focus_area": "volunteer, mentorship, Chicago",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Illinois",
@@ -2032,7 +2032,7 @@
  {
    "title": "charity: water",
    "opp_type": "Service Opportunity",
-   "focus_area": "water, sustainable development, volunteer, New York City",
+   "focus_area": "water access, sustainable development, volunteer, New York City",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -2242,7 +2242,7 @@
  {
    "title": "Food and Water Watch",
    "opp_type": "Service Opportunity",
-   "focus_area": "volunteer, organizing, food, water, climate change, health",
+   "focus_area": "volunteer, organizing, food, water access, climate change, health",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -2252,7 +2252,7 @@
  {
    "title": "Free Software Foundation",
    "opp_type": "Service Opportunity",
-   "focus_area": "volunteer, software, tech, computers",
+   "focus_area": "volunteer, software, technology, computers",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -2352,7 +2352,7 @@
  {
    "title": "Greensgrow",
    "opp_type": "Service Opportunity",
-   "focus_area": "Philadelphia, food, farm, volunteer",
+   "focus_area": "Philadelphia, food, farming, volunteer",
    "deadline": "N/A",
    "grade_level": "12",
    "location": "Pennsylvania",
@@ -2632,7 +2632,7 @@
  {
    "title": "National Voter Registration Day",
    "opp_type": "Service Opportunity",
-   "focus_area": "volunteer, voting, vote",
+   "focus_area": "volunteer, voting",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -2832,7 +2832,7 @@
  {
    "title": "Rosie Riveters Mentorship Program",
    "opp_type": "Service Opportunity",
-   "focus_area": "STEM, girls, volunteer, mentor",
+   "focus_area": "STEM, girls, volunteer, mentorship",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Virginia",
@@ -2922,7 +2922,7 @@
  {
    "title": "Spells Writing Lab",
    "opp_type": "Service Opportunity",
-   "focus_area": "Philadelphia, mentor, volunteer, literacy",
+   "focus_area": "Philadelphia, mentorship, volunteer, literacy",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Pennsylvania",
@@ -3162,7 +3162,7 @@
  {
    "title": "UNA-USA",
    "opp_type": "Service Opportunity",
-   "focus_area": "united nations, global citizenship",
+   "focus_area": "United Nations, global citizenship",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -3252,7 +3252,7 @@
  {
    "title": "Wildlife Conservation Society",
    "opp_type": "Service Opportunity",
-   "focus_area": "wildlife conservation, advocacy, petition",
+   "focus_area": "wildlife, advocacy, petition",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -3302,7 +3302,7 @@
  {
    "title": "AFS Project Change",
    "opp_type": "Study Abroad Program",
-   "focus_area": "international development, human rights, sustainability, global citizenship, SDGs, sustainable development goals",
+   "focus_area": "international development, human rights, sustainability, global citizenship, SDGs, sustainable development",
    "deadline": "November 2019",
    "grade_level": "9, 10, 11, 12",
    "location": "Global",
@@ -3572,7 +3572,7 @@
  {
    "title": "Brookhaven National Laboratory STEM-Prep Summer Institute",
    "opp_type": "Summer Program",
-   "focus_area": "stem, people of color",
+   "focus_area": "STEM, people of color",
    "deadline": "April 2020",
    "grade_level": "10",
    "location": "New York",
@@ -3602,7 +3602,7 @@
  {
    "title": "California State Summer School for Mathematics & Science",
    "opp_type": "Summer Program",
-   "focus_area": "stem, academics",
+   "focus_area": "STEM, academics",
    "deadline": "February 2020",
    "grade_level": "10, 11, 12",
    "location": "California",
@@ -3652,7 +3652,7 @@
  {
    "title": "CATALYST Academy",
    "opp_type": "Summer Program",
-   "focus_area": "stem, diversity, research, people of color",
+   "focus_area": "STEM, diversity, research, people of color",
    "deadline": "March 2020",
    "grade_level": "11, 12",
    "location": "New York",
@@ -3762,7 +3762,7 @@
  {
    "title": "Duke Intensive STEM Academy",
    "opp_type": "Summer Program",
-   "focus_area": "stem, research",
+   "focus_area": "STEM, research",
    "deadline": "May 2020",
    "grade_level": "9, 10, 11, 12",
    "location": "North Carolina",
@@ -3952,7 +3952,7 @@
  {
    "title": "High School Programs for Enrichment and Accelerated Knowledge in STEM",
    "opp_type": "Summer Program",
-   "focus_area": "stem",
+   "focus_area": "STEM",
    "deadline": "N/A",
    "grade_level": "10, 11, 12",
    "location": "Georgia",
@@ -3962,7 +3962,7 @@
  {
    "title": "iD Tech Camp",
    "opp_type": "Summer Program",
-   "focus_area": "stem",
+   "focus_area": "STEM",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -4082,7 +4082,7 @@
  {
    "title": "Mathematics & Science for Minority Students (MS)2",
    "opp_type": "Summer Program",
-   "focus_area": "stem, diversity",
+   "focus_area": "STEM, diversity",
    "deadline": "December 2019",
    "grade_level": "10",
    "location": "Massachusetts",
@@ -4102,7 +4102,7 @@
  {
    "title": "Mathworks Honors Summer Math Camp",
    "opp_type": "Summer Program",
-   "focus_area": "mathematics, stem",
+   "focus_area": "mathematics, STEM",
    "deadline": "April 2020",
    "grade_level": "9, 10, 11, 12",
    "location": "Texas",
@@ -4132,7 +4132,7 @@
  {
    "title": "Minority Introduction to Engineering and Science",
    "opp_type": "Summer Program",
-   "focus_area": "stem, diversity, academics",
+   "focus_area": "STEM, diversity, academics",
    "deadline": "February 2020",
    "grade_level": "11",
    "location": "Massachusetts",
@@ -4142,7 +4142,7 @@
  {
    "title": "MIT Beaver Works Summer Institute",
    "opp_type": "Summer Program",
-   "focus_area": "stem, workshop",
+   "focus_area": "STEM, workshop",
    "deadline": "March 2020",
    "grade_level": "12",
    "location": "Massachusetts",
@@ -4152,7 +4152,7 @@
  {
    "title": "MIT Women's Technology Program",
    "opp_type": "Summer Program",
-   "focus_area": "stem, academics, women, electrical engineering, computer science, mechanical engineering",
+   "focus_area": "STEM, academics, women, electrical engineering, computer science, mechanical engineering",
    "deadline": "January 2020",
    "grade_level": "11",
    "location": "Massachusetts",
@@ -4202,7 +4202,7 @@
  {
    "title": "National Youth Science Camp",
    "opp_type": "Summer Program",
-   "focus_area": "stem, outdoor",
+   "focus_area": "STEM, outdoors",
    "deadline": "February 2020",
    "grade_level": "12",
    "location": "West Virginia",
@@ -4392,7 +4392,7 @@
  {
    "title": "Research Science Institute",
    "opp_type": "Summer Program",
-   "focus_area": "stem, research",
+   "focus_area": "STEM, research",
    "deadline": "January 2020",
    "grade_level": "11",
    "location": "Massachusetts",
@@ -4512,7 +4512,7 @@
  {
    "title": "Summer Academy for Mathematics and Science",
    "opp_type": "Summer Program",
-   "focus_area": "stem, diversity",
+   "focus_area": "STEM, diversity",
    "deadline": "N/A",
    "grade_level": "12",
    "location": "Pennsylvania",
@@ -4572,7 +4572,7 @@
  {
    "title": "Summer Math and Science Honors Academy",
    "opp_type": "Summer Program",
-   "focus_area": "stem, people of color",
+   "focus_area": "STEM, people of color",
    "deadline": "March 2020",
    "grade_level": "10",
    "location": "California, Georgia, Michigan, Pennsylvania",
@@ -4632,7 +4632,7 @@
  {
    "title": "The Cooper Union Summer STEM Program",
    "opp_type": "Summer Program",
-   "focus_area": "stem, engineering",
+   "focus_area": "STEM, engineering",
    "deadline": "March 2020",
    "grade_level": "10, 11, 12",
    "location": "New York",
@@ -4762,7 +4762,7 @@
  {
    "title": "UC Santa Barbara Science and Engineering Research Academy",
    "opp_type": "Summer Program",
-   "focus_area": "stem, research",
+   "focus_area": "STEM, research",
    "deadline": "March 2020",
    "grade_level": "9, 10, 11, 12",
    "location": "California",
@@ -4822,7 +4822,7 @@
  {
    "title": "US Naval Academy Summer STEM Program",
    "opp_type": "Summer Program",
-   "focus_area": "stem",
+   "focus_area": "STEM",
    "deadline": "April 2020",
    "grade_level": "9, 10, 11",
    "location": "Maryland",
@@ -5012,7 +5012,7 @@
  {
    "title": "American Legion Auxiliary Girls State",
    "opp_type": "Youth Program",
-   "focus_area": "leadership, government, young women",
+   "focus_area": "leadership, government, women",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -5222,7 +5222,7 @@
  {
    "title": "Girls Teaching Girls to Code",
    "opp_type": "Youth Program",
-   "focus_area": "computer science, tech, engineering, coding, girls",
+   "focus_area": "computer science, technology, engineering, coding, girls",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "California",
@@ -5292,7 +5292,7 @@
  {
    "title": "Junior State of America",
    "opp_type": "Youth Program",
-   "focus_area": "politics, government, community service, volunteerism, diversity",
+   "focus_area": "politics, government, community service, volunteer, diversity",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -5372,7 +5372,7 @@
  {
    "title": "MissionBit",
    "opp_type": "Youth Program",
-   "focus_area": "coding, tech, computer science, diversity, San Francisco",
+   "focus_area": "coding, technology, computer science, diversity, San Francisco",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "California",
@@ -5402,7 +5402,7 @@
  {
    "title": "National Beta Club",
    "opp_type": "Youth Program",
-   "focus_area": "academic achievement, character, service, leadership ",
+   "focus_area": "academic achievement, character, service, leadership",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -5482,7 +5482,7 @@
  {
    "title": "Oregon Primate Research Center Science Ambassadors",
    "opp_type": "Youth Program",
-   "focus_area": "healthcare, medicine, nursing",
+   "focus_area": "health care, medicine, nursing",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Oregon",
@@ -5532,7 +5532,7 @@
  {
    "title": "Sadie Nash Leadership Project",
    "opp_type": "Youth Program",
-   "focus_area": "leadership, activism, young women, diversity",
+   "focus_area": "leadership, activism, women, diversity",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "New York",
@@ -5552,7 +5552,7 @@
  {
    "title": "she++ Fellowship Program",
    "opp_type": "Youth Program",
-   "focus_area": "coding, tech, computer science, women, diversity",
+   "focus_area": "coding, technology, computer science, women, diversity",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -5582,7 +5582,7 @@
  {
    "title": "Stanford Math Circle",
    "opp_type": "Youth Program",
-   "focus_area": "math",
+   "focus_area": "mathematics",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "California",
@@ -5592,7 +5592,7 @@
  {
    "title": "StreetCode Academy",
    "opp_type": "Youth Program",
-   "focus_area": "coding, tech, entrepreneurship, diversity",
+   "focus_area": "coding, technology, entrepreneurship, diversity",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "California",
@@ -5622,7 +5622,7 @@
  {
    "title": "Tech Scholars II Program",
    "opp_type": "Youth Program",
-   "focus_area": "tech, coding, New York City",
+   "focus_area": "technology, coding, New York City",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "New York",
@@ -5692,7 +5692,7 @@
  {
    "title": "Tri-M Music Honor Society",
    "opp_type": "Youth Program",
-   "focus_area": "music, community service, leadership ",
+   "focus_area": "music, community service, leadership",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -5782,7 +5782,7 @@
  {
    "title": "Youth Radio",
    "opp_type": "Youth Program",
-   "focus_area": "Oakland, Bay Area, radio, communications",
+   "focus_area": "Oakland, Bay Area, radio, communication",
    "deadline": "N/A",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
