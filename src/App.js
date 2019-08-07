@@ -19,6 +19,9 @@ const us_states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Co
 "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "Washington D.C.", 
 "West Virginia", "Wisconsin", "Wyoming"];
 
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", 
+"September", "October", "November", "December"];
+
 let focus_areas_list = [];
 
 function find_focus_areas(data) {
@@ -33,9 +36,6 @@ function find_focus_areas(data) {
         }
     }
 }
-
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", 
-"September", "October", "November", "December"];
 
 function find_index_of_date(input, data, colIndex) {
     let index = 12;
@@ -74,6 +74,15 @@ class App extends React.Component {
                     backgroundColor: "#FFFFFF",
                 }
             },
+            MuiTableFooter: {
+                root: {
+                   position: "fixed",
+                   left: 0,
+                   bottom: 0,
+                   backgroundColor: "white",
+                   width: "100%",
+                },
+            },
         }
     })
 
@@ -100,7 +109,7 @@ class App extends React.Component {
                         }
                     }
                     return (
-                        <a href={opp_link}>{value}</a>
+                        <a href={opp_link} target="_blank">{value}</a>
                     );
                 }
             },
@@ -277,6 +286,8 @@ class App extends React.Component {
                 options={options}
             />
             </MuiThemeProvider>
+            <br />
+            <br />
         </div>
     )
   }
