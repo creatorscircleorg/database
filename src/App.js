@@ -61,6 +61,10 @@ class App extends React.Component {
                 },
                 root: {
                     fontFamily: "Helvetica Neue",
+                },
+                footer: {
+                    position: "relative",
+                    left: "200%"
                 }
             },
             MuiIconButton: {
@@ -77,12 +81,11 @@ class App extends React.Component {
             MuiTableFooter: {
                 root: {
                    position: "fixed",
-                   left: 0,
-                   bottom: 0,
+                   bottom: "0px",
                    backgroundColor: "white",
                    width: "100%",
                 },
-            },
+            }
         }
     })
 
@@ -256,6 +259,7 @@ class App extends React.Component {
         filterType: 'dropdown',
         selectableRows: 'none',
         rowsPerPage: 5,
+        responsive: 'scroll',
         rowsPerPageOptions: [5, 10, 15, 25],
         isRowSelectable: (dataIndex) => {
             return false;
