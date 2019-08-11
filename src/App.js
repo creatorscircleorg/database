@@ -85,6 +85,11 @@ class App extends React.Component {
                    backgroundColor: "white",
                    width: "100%",
                 },
+            },
+            MUIDataTable: {
+                responsiveScroll: {
+                    maxHeight: '1100px'
+                }
             }
         }
     })
