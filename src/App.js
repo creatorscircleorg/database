@@ -90,6 +90,9 @@ class App extends React.Component {
                 responsiveScroll: {
                     maxHeight: '1100px'
                 }
+            },
+            root: {
+                fontFamily: "Helvetica Neue",
             }
         }
     })
