@@ -51,6 +51,28 @@ function find_index_of_date(input, data, colIndex) {
     return index;
 }
 
+let data_map;
+
+function analyze_data(data) {
+    data_map = new Map();
+    for (let i = 0; i < data.length; i++) {
+        let cur_elem = data[i];
+        let cur_fa = cur_elem.focus_area;
+        let cur_fa_arr = cur_fa.split(", ");
+
+        for (let index = 0; index < cur_fa_arr.length; index++) {
+            let cur_item = cur_fa_arr[index];
+            if (data_map.has(cur_item)) {
+                let original_num = data_map.get(cur_item);
+                data_map.set(cur_item, original_num + 1);
+            } else {
+                data_map.set(cur_item, 1);
+            }
+        }
+    }
+    //print out the results somewhere
+}
+
 class App extends React.Component {
 
     getMuiTheme = () => createMuiTheme({
@@ -92,7 +114,7 @@ class App extends React.Component {
                 }
             },
             root: {
-                fontFamily: "Helvetica Neue",
+                fontFamilySansSerif: "Helvetica Neue",
             }
         }
     })
@@ -101,6 +123,8 @@ class App extends React.Component {
     const data = require('./datafile.json');
 
     find_focus_areas(data);
+
+    analyze_data(data);
 
     const columns = [
         {
@@ -241,11 +265,19 @@ class App extends React.Component {
 
                         for (let i = 0; i < filter.length; i++) {
                             let filter_val = filter[i];
-                           if (location.includes(filter_val) 
-                                || (filter_val == "Global" && hasIntlItem)
+
+                            for (let j = 0; j < location_arr.length; j++) {
+                                let cur_loc = location_arr[j];
+                                if (cur_loc == filter_val) {
+                                    return false;
+                                }
+                            }
+
+                            if ((filter_val == "Global" && hasIntlItem)
                                 || (filter_val == "Nationwide" && hasUSItem)) {
-                               return false;
-                           }
+                                    return false;
+                                }
+
                         }
                         return true;
                     }
@@ -267,7 +299,7 @@ class App extends React.Component {
         filterType: 'dropdown',
         selectableRows: 'none',
         rowsPerPage: 5,
-        responsive: 'scroll',
+        responsive: 'stacked',
         rowsPerPageOptions: [5, 10, 15, 25],
         isRowSelectable: (dataIndex) => {
             return false;
