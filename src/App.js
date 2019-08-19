@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MUIDataTable from 'mui-datatables';
 import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
+import ReactGA from 'react-ga';
 
 const all_locations = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
 "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", 
@@ -21,6 +22,11 @@ const us_states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Co
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", 
 "September", "October", "November", "December"];
+
+function initializeReactGA() {
+    ReactGA.initialize('UA-146030774-1');
+    ReactGA.pageview('/homepage');
+}
 
 let focus_areas_list = [];
 
