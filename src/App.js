@@ -70,7 +70,29 @@ function analyze_data(data) {
             }
         }
     }
-    //print out the results somewhere
+}
+
+let type_map;
+
+function analyze_type(data) { //data analytics
+    type_map = new Map();
+    for (let i = 0; i < data.length; i++) {
+        let cur_elem = data[i];
+        if (cur_elem.opp_type == "Service Opportunity") {
+            let cur_fa = cur_elem.focus_area;
+            let cur_fa_arr = cur_fa.split(", ");
+    
+            for (let index = 0; index < cur_fa_arr.length; index++) {
+                let cur_item = cur_fa_arr[index];
+                if (type_map.has(cur_item)) {
+                    let original_num = type_map.get(cur_item);
+                    type_map.set(cur_item, original_num + 1);
+                } else {
+                    type_map.set(cur_item, 1);
+                }
+            }
+        }
+    }
 }
 
 class App extends React.Component {
@@ -124,7 +146,7 @@ class App extends React.Component {
 
     find_focus_areas(data);
 
-    analyze_data(data);
+    analyze_type(data);
 
     const columns = [
         {
