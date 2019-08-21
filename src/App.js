@@ -24,7 +24,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 "September", "October", "November", "December"];
 
 function initializeReactGA() {
-    ReactGA.initialize('UA-146030774-1');
+    ReactGA.initialize('UA-146123946-1');
     ReactGA.pageview('/homepage');
 }
 
@@ -327,7 +327,7 @@ class App extends React.Component {
         filterType: 'dropdown',
         selectableRows: 'none',
         rowsPerPage: 5,
-        responsive: 'stacked',
+        responsive: 'scroll',
         rowsPerPageOptions: [5, 10, 15, 25],
         isRowSelectable: (dataIndex) => {
             return false;
