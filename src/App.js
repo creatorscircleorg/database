@@ -110,7 +110,7 @@ class App extends React.Component {
                     fontWeight: "bold",
                 },
                 root: {
-                    fontFamily: "Verdana",
+                    fontFamily: "Helvetica Neue",
                 },
                 footer: {
                     position: "relative",
@@ -142,7 +142,7 @@ class App extends React.Component {
                 }
             },
             root: {
-                fontFamilySansSerif: "Verdana",
+                fontFamilySansSerif: "Helvetica Neue",
             }
         }
     })
