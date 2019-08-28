@@ -142,7 +142,7 @@ class App extends React.Component {
                 }
             },
             root: {
-                fontFamilySansSerif: "Helvetica Neue",
+                fontFamilySansSerif: "Arial",
             }
         }
     })
