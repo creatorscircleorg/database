@@ -324,10 +324,19 @@ class App extends React.Component {
     ];
 
     const options = {
+    	download: true,
+    	downloadOptions: {
+    		filename: 'CreatorsCircle Opportunities.csv',
+    		separator: ',',
+    		filterOptions: {
+    			useDisplayedColumnsOnly: true,
+    			useDisplayedRowsOnly: true,
+    		}
+    	},
         filterType: 'dropdown',
         selectableRows: 'none',
         rowsPerPage: 5,
-        responsive: 'scroll',
+        responsive: 'standard',
         rowsPerPageOptions: [5, 10, 15, 25],
         isRowSelectable: (dataIndex) => {
             return false;
