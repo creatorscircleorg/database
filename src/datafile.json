@@ -142,7 +142,7 @@
  {
    "title": "Emperor Science Award",
    "opp_type": "Awards Program",
-   "focus_area": "science, research, medicine",
+   "focus_area": "science, research, healthcare",
    "deadline": "November 2021",
    "grade_level": "10, 11",
    "location": "Nationwide",
@@ -202,7 +202,7 @@
  {
    "title": "Google Code-In",
    "opp_type": "Awards Program",
-   "focus_area": "computer science, open source, coding",
+   "focus_area": "computer science, coding",
    "deadline": "October 2021",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -252,7 +252,7 @@
  {
    "title": "International Genetically Engineered Machine (iGEM) Competition",
    "opp_type": "Awards Program",
-   "focus_area": "biology, design",
+   "focus_area": "science, design",
    "deadline": "August 2021",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -1230,7 +1230,7 @@
    "website": "https://www.yearup.org/"
  },
  {
-   "title": "academic achievement, leadership, community service, asian and pacific islander",
+   "title": "APIASF General Scholarship",
    "opp_type": "Scholarship Program",
    "focus_area": "academic achievement, leadership, volunteer, asian and pacific islander",
    "deadline": "January 2021",
@@ -1462,7 +1462,7 @@
  {
    "title": "Diller Tikkun Olam Scholarship",
    "opp_type": "Scholarship Program",
-   "focus_area": "leadership, volunteer, jewish youth",
+   "focus_area": "leadership, volunteer, jewish youth, service",
    "deadline": "January 2021",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -2052,7 +2052,7 @@
  {
    "title": "Center for Biological Diversity",
    "opp_type": "Service Opportunity",
-   "focus_area": "volunteer, biology, conservation",
+   "focus_area": "volunteer, animal welfare, conservation",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Arizona",
@@ -2172,7 +2172,7 @@
  {
    "title": "DAV (Disabled American Veterans) Charitable Service Trust",
    "opp_type": "Service Opportunity",
-   "focus_area": "veterans, volunteer",
+   "focus_area": "volunteer, service",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -2540,7 +2540,7 @@
    "website": "http://www.lenfestcenter.org/"
  },
  {
-   "title": "lifeBeat",
+   "title": "Lifebeat",
    "opp_type": "Service Opportunity",
    "focus_area": "advocacy, healthcare",
    "deadline": "Year-Round",
@@ -3132,7 +3132,7 @@
  {
    "title": "The John F. Kennedy Center for the Performing Arts",
    "opp_type": "Service Opportunity",
-   "focus_area": "arts",
+   "focus_area": "arts, performing arts",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Washington D.C.",
@@ -3252,7 +3252,7 @@
  {
    "title": "Veterans of Foreign Wars",
    "opp_type": "Service Opportunity",
-   "focus_area": "veterans, advocacy, volunteer",
+   "focus_area": "service, advocacy, volunteer",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -3460,14 +3460,14 @@
    "website": "http://www.yes-abroad.org/"
  },
  {
-   "title": "AI4ALL",
+   "title": "AI4ALL: Stanford Summer Program",
    "opp_type": "Summer Program",
-   "focus_area": "artificial intelligence, diversity",
+   "focus_area": "artificial intelligence, diversity, computer science",
    "deadline": "February 2021",
    "grade_level": "10",
    "location": "California",
    "description": "Stanford AI4ALL intends to increase diversity in the field of Artificial Intelligence by targeting students from a range of financial and cultural backgrounds. Our mission is to inspire tomorrow’s leaders to know, think and use Artificial Intelligence. We aim to educate students through this three-week residential program with a combination of lectures, hands-on research projects, field trips, and mentoring activities.",
-   "website": "http://ai4all.stanford.edu/about"
+   "website": "https://ai4all.spcs.stanford.edu/"
  },
  {
    "title": "AIMS: Adventures in Medicine and Science",
@@ -3572,7 +3572,7 @@
  {
    "title": "Boston Academic Immersion",
    "opp_type": "Summer Program",
-   "focus_area": "medicine, healthcare",
+   "focus_area": "academic achievement, college readiness",
    "deadline": "Year-Round",
    "grade_level": "11, 12",
    "location": "Massachusetts",
@@ -3622,7 +3622,7 @@
  {
    "title": "Brandeis Global Youth Summit on the Future of Medicine",
    "opp_type": "Summer Program",
-   "focus_area": "medicine, science",
+   "focus_area": "healthcare, science",
    "deadline": "Year-Round",
    "grade_level": "11, 12",
    "location": "Massachusetts",
@@ -3642,7 +3642,7 @@
  {
    "title": "Bridge to AP Biology",
    "opp_type": "Summer Program",
-   "focus_area": "healthcare, medicine, science",
+   "focus_area": "healthcare, science, college readiness",
    "deadline": "Year-Round",
    "grade_level": "10, 11, 12",
    "location": "Massachusetts",
@@ -5107,7 +5107,7 @@
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
    "description": "AI4ALL opens doors to artificial intelligence for underrepresented talent through education and mentorship. Our vision for AI is a world where diverse thought, perspectives, and voices unlock AI’s potential to benefit humanity.",
-   "website": "http://ai-4-all.org/"
+   "website": "https://ai-4-all.org/"
  },
  {
    "title": "Aim High",
@@ -5188,16 +5188,6 @@
    "location": "Nationwide",
    "description": "BUILD’s mission is to use entrepreneurship to ignite the potential of youth from under-resourced communities and propel them to high school, college & career success.",
    "website": "https://build.org/"
- },
- {
-   "title": "Centro Legal De La Raza",
-   "opp_type": "Youth Program",
-   "focus_area": "law, career readiness",
-   "deadline": "Year-Round",
-   "grade_level": "9, 10, 11, 12",
-   "location": "California",
-   "description": "The Youth Law Academy is a three year program for Oakland high school students designed to build confidence and understanding of the path to college. Recognizing the need for more diversity in the legal profession we ultimately hope to inspire our students to seek a career in the law for the betterment of our community.",
-   "website": "https://www.centrolegal.org/youth-law-academy/"
  },
  {
    "title": "College Possible",
@@ -5552,7 +5542,7 @@
  {
    "title": "Native Youth Leadership Alliance",
    "opp_type": "Youth Program",
-   "focus_area": "leadership, indigenous youth, native american, community organizing",
+   "focus_area": "leadership, native youth, native american, community organizing",
    "deadline": "Year-Round",
    "grade_level": "Incoming college freshmen",
    "location": "Nationwide",
@@ -5622,7 +5612,7 @@
  {
    "title": "Project Wayfinder",
    "opp_type": "Youth Program",
-   "focus_area": "mental health",
+   "focus_area": "mental health, career readiness",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -5672,7 +5662,7 @@
  {
    "title": "Society of American Indian Government Employees (SAIGE) Native Student Leadership",
    "opp_type": "Youth Program",
-   "focus_area": "native american, american indian, government, service, leadership, indigenous youth",
+   "focus_area": "native american, american indian, government, service, leadership, native youth",
    "deadline": "Year-Round",
    "grade_level": "Incoming college freshmen",
    "location": "Nationwide",
@@ -5682,7 +5672,7 @@
  {
    "title": "Stanford EXPLORE: A Lecture Series on Biomedical Research For High School Students",
    "opp_type": "Youth Program",
-   "focus_area": "healthcare, biology, science",
+   "focus_area": "healthcare, research, science",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "California",
@@ -5912,7 +5902,7 @@
  {
    "title": "XPRIZE: Code Games",
    "opp_type": "Awards Program",
-   "focus_area": "coding, enviroment & sustainability, equity, gaming, technology",
+   "focus_area": "coding, environment & sustainability, equity, gaming, technology",
    "deadline": "January 2021",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -5942,7 +5932,7 @@
  {
    "title": "Bioneers Youth Leadership and Education Program",
    "opp_type": "Youth Program",
-   "focus_area": "biomimcry, environment & sustainability, food justice, leadership, indigenous youth, youth development",
+   "focus_area": "biomimcry, environment & sustainability, leadership, youth development",
    "deadline": "May 2021",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -5994,7 +5984,7 @@
    "opp_type": "Youth Program",
    "focus_area": "career readiness, diversity, law",
    "deadline": "April 2021",
-   "grade_level": "9",
+   "grade_level": "9, 10, 11, 12",
    "location": "California",
    "description": "The Youth Law Academy is a three year program for Oakland high school students designed to build confidence and understanding of the path to college. Recognizing the need for more diversity in the legal profession we ultimately hope to inspire our students to seek a career in the law for the betterment of our community.",
    "website": "https://www.centrolegal.org/youth-law-academy/"
@@ -6052,7 +6042,7 @@
  {
    "title": "GenCLEO Youth Empowerment Movement",
    "opp_type": "Youth Program",
-   "focus_area": "biomimcry, environment & sustainability, food justice, leadership, indigenous youth, youth development",
+   "focus_area": "biomimcry, environment & sustainability, food justice, leadership, native youth, youth development",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Florida",
@@ -6298,5 +6288,315 @@
    "location": "Nationwide",
    "description": "S.O.U.L Sisters supports new leaders that have \"lived and breathed\" the inequalities of our legal, educational, and economic systems. Our mission is to mobilize systems-involved girls and femmes of color – black, brown, and indigenous – to interrupt cycles of state violence, poverty, and oppression. Our four pillars are leadership, healing, social justice, and the arts.",
    "website": "https://soulsistersleadership.org/"
+ },
+ {
+   "title": "Immigrants Rising",
+   "opp_type": "Scholarship Program",
+   "focus_area": "immigrant youth, social justice, immigration",
+   "deadline": "Year-Round",
+   "grade_level": "12",
+   "location": "Nationwide",
+   "description": "Are you applying, re-entering or already enrolled in a California college or university? Make sure you’re getting all the funding you’re eligible for and the support you need with helpful resources designed for undocumented individuals pursuing an undergraduate degree. Explore Immigrants Rising online databases of scholarships that don’t require proof of citizenship.",
+   "website": "https://immigrantsrising.org/resource/applying-for-scholarships/"
+ },
+ {
+   "title": "Bioneers Native Youth Leadership Program",
+   "opp_type": "Youth Program",
+   "focus_area": "native american, american indian, leadership, native youth",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "In 2011, the Bioneers Native Youth Leadership Program was established to provide Native youth with a safe space to observe, interact with, and learn from Native mentors and each other empowering them with the confidence and skills to become leaders. With generous support from our sponsors and donors, the Native Youth Leadership Program supports Native youth attendees with the transportation, lodging, healthy food, and a gift bag. Out of the 2019 cohort, 109 youth, 22 chaperones participated from 15 partnering organizations, 4 families, 3 colleges/universities, and 17 individuals. These individuals represented 49+ tribal affiliations, including 13 California Indian tribes.",
+   "website": "https://bioneers.org/native-youth-leadership-bioneers/"
+ },
+ {
+   "title": "Bioneers Just Us 4 Food Justice",
+   "opp_type": "Youth Program",
+   "focus_area": "food justice, leadership, youth development",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "Bioneers' Just Us 4 Food Justice was a 10-year initiative that organized annual day-long empowerment and unity retreats that brought together youth leaders and their adult mentors involved in creating greater access to a healthier and more just food system at the community-level. The initiative was designed to provide an enriching experience to nurture creativity and leadership skills, connect the network and acknowledge and strengthen the role of youth in the food justice movement. ",
+   "website": "https://bioneers.org/youth-leadership-and-education-program/"
+ },
+ {
+   "title": "Global Citizen Year Fellowship",
+   "opp_type": "Study Abroad Program",
+   "focus_area": "education, healthcare, environment & sustainability, leadership, travel, global citizenship, gap year",
+   "deadline": "August 2021",
+   "grade_level": "12",
+   "location": "Nationwide",
+   "description": "For the equivalent of an academic year, Global Citizen Year Fellows experience life for the global majority, living with a family in a community in Brazil, Ecuador, or India and apprenticing with local efforts advancing education, health, and sustainability. Over the past decade, the Fellowship has launched more than 1,000 young changemakers with the curiosity, conviction and courage to become the leaders our world needs.",
+   "website": "https://www.globalcitizenyear.org/"
+ },
+ {
+   "title": "Global Citizen Academy",
+   "opp_type": "Youth Program",
+   "focus_area": "education, social impact, changemakers, global citizenship, gap year, mentorship",
+   "deadline": "August 2021",
+   "grade_level": "12",
+   "location": "Nationwide",
+   "description": "Global Citizen Academy is a semester-long leadership experience for hopeful and determined students worldwide to build powerful and practical skills for a lifetime of social impact. Hosted on the Forum online learning platform, the Academy features accredited courses, sessions with today’s most impactful leaders, volunteer opportunities, and mentorship.",
+   "website": "https://www.globalcitizenyear.org/academy/"
+ },
+ {
+   "title": "The Aspen Challenge",
+   "opp_type": "Awards Program",
+   "focus_area": "social impact, leadership, youth development",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "The Aspen Challenge provides inspiration, tools, and a platform for young people to design solutions to some of the most critical problems humanity faces. Young people are moments away from being tomorrow’s decision-makers and this program offers them a chance to practice their critical thinking, tap into their creativity, and offer their fresh perspective on issues within our society.",
+   "website": "https://www.aspenchallenge.org/"
+ },
+ {
+   "title": "The Next Gen Come Up",
+   "opp_type": "Youth Program",
+   "focus_area": "social impact, social justice, leadership, black lives matter, activism",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "New Jersey",
+   "description": "The Next Gen Come Up is a non-profit organization encouraging community service and activism among teens",
+   "website": "https://www.thenextgencu.com/"
+ },
+ {
+   "title": "Black Lives Matter Youth Vanguard",
+   "opp_type": "Youth Program",
+   "focus_area": "black lives matter, social justice, activism",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "Youth have been integral to Black Lives Matter since our inception, with children participating in our first meetings, actions, and convenings. In 2015, our youth leaders officially formed the Black Lives Matter Youth Vanguard and began to organize around justice for Black children, especially in schools.",
+   "website": "https://www.blmla.org/who-we-are"
+ },
+ {
+   "title": "NAACP Youth Council",
+   "opp_type": "Youth Program",
+   "focus_area": "education, social justice, advocacy, activism, black lives matter",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "The NAACP believes strongly that future leaders must be developed today, and such development is ongoing in the Youth & College Division, created in 1936. Today there are more than 25,000 young people, under the age of 25, representing 550 Junior Youth Councils, Youth Councils, High School Chapters and College Chapters actively involved in the fight for civil rights. The NAACP has one of the largest organized groups of young people of any secular organization in the country.",
+   "website": "https://www.naacp.org/youth-college/"
+ },
+ {
+   "title": "Youth Climate Summit USA",
+   "opp_type": "Youth Program",
+   "focus_area": "conference, leadership, youth development, climate action, environment & sustainability",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "Youth Climate Summit USA is a network of high school students dedicated to one goal: providing young people with the skills and connections we need to be better climate advocates. The organization was created by students at Montgomery Blair High School in Silver Spring, Maryland, but has since expanded to cities across the country. We host yearly conference-style summits, with speakers, panelists, and workshop leaders from across the environmental movement, to educate youth participants about the seriousness of climate change and power of our voices in solving it. We prioritize youth leadership and youth involvement. Put simply, out mission is to give youth the tools to take control of their future. ",
+   "website": "https://www.youthclimatesummitusa.org/"
+ },
+ {
+   "title": "Hopebound",
+   "opp_type": "Youth Program",
+   "focus_area": "mental health",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Georgia, New Jersey",
+   "description": "We make virtual therapy more accessible to adolescents, within and alongside their communities. Adolescents, or middle and high school-age children, are an extremely vulnerable age group - today more than ever. We serve all adolescents, but have a particular focus on vulnerable adolescent populations such as those who are low-income, people of color, LGBTQIA+, in foster care, experiencing homelessness, or involved in the juvenile justice system. Currently, our services are available in Georgia and New Jersey. ",
+   "website": "https://www.hopebound.com/"
+ },
+ {
+   "title": "Youth Design Challenge",
+   "opp_type": "Youth Program",
+   "focus_area": "stem, environment & sustainability, climate action, science",
+   "deadline": "May 2021",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "The Youth Design Challenge (YDC) is a free, hands-on, project-based learning experience that provides classroom and informal educators with a new framework to introduce biomimicry and an interdisciplinary approach to science and environmental literacy. Working in teams with an adult coach, students explore the wonders of the natural world and apply what they learn to create innovations that support a healthier planet.",
+   "website": "https://youthchallenge.biomimicry.org/en/challenge/youth-design-challenge-2021"
+ },
+ {
+   "title": "Pretty Brown Girl",
+   "opp_type": "Youth Program",
+   "focus_area": "girls, youth development, BIPOC, leadership, social change",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "Pretty Brown Girl is one of the fastest growing girls movements in the country, focused on the well-being of Black and Brown girls. The belief is that by developing positive self-esteem and confidence while giving the gift of self-love, girls will be inspired to dream their biggest dreams. The Pretty Brown Girl Academy will remain focused on reaching girls in Elementary, Middle and High School, concentrating efforts on building leaders from the inside out, while guiding girls through a self-discovery journey that inspires confidence, self-love and a passion to pursue their dreams.",
+   "website": "https://prettybrowngirl.com/"
+ },
+ {
+   "title": "Career Girls",
+   "opp_type": "Youth Program",
+   "focus_area": "career readiness, girls",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "Career Girls is founded on the dream that every girl around the world has access to diverse and accomplished women role models — to learn from their experiences and to discover their own path to empowerment. CareerGirls.org is a comprehensive video-based career exploration and readiness tool for girls. It’s free to use, and free of ads. We have the largest online collection of career guidance videos focusing exclusively on diverse and accomplished women — over 250 of whom are in STEM fields — and we add to it weekly.",
+   "website": "https://www.careergirls.org/"
+ },
+ {
+   "title": "Full Circle",
+   "opp_type": "Youth Program",
+   "focus_area": "mental health, networking",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "Full Circle is a wellness platform “for Gen Z, by Gen Z.” Our team's goal is to break down the stigma around mental health and support you so that you can keep doing what you love. FullCircle combines scientific research with a modern, dynamic, and friendly twist. Let's make mental wellness cool.",
+   "website": "https://www.teamfullcircle.org/"
+ },
+ {
+   "title": "Youth Climate Leaders",
+   "opp_type": "Youth Program",
+   "focus_area": "career readiness, leadership, sdg, sustainable development, global citizenship",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Global",
+   "description": "We are a global youth leadership network catalyzing climate professionals. YCL was created to tackle the two main threats against Youth's future: high systemic unemployment and the climate crisis. YCL was created to bridge this gap and support youth around the world to find jobs and opportunities aligned with their purpose, and organizations to hire young talents who are willing to dedicate their lives to finding solutions to the climate crisis. Our comprehensive approach equips young leaders through immersive training and professional field placements within the climate economy. ",
+   "website": "https://www.youthclimateleaders.org/"
+ },
+ {
+   "title": "Alliance for Youth Action",
+   "opp_type": "Youth Program",
+   "focus_area": "social justice, advocacy, activism, politics, government, citizenship",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "The Alliance for Youth Action grows progressive people power across America by empowering local young people’s organizations to strengthen our democracy, fix our economy, and correct injustices through on-the-ground organizing.",
+   "website": "https://allianceforyouthaction.org/"
+ },
+ {
+   "title": "Heirs To Our Oceans",
+   "opp_type": "Youth Program",
+   "focus_area": "leadership, youth development, climate action, environment & sustainability, conservation",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "Heirs To Our Oceans, a youth empowerment organization founded in 2016, upholds a mission to spread awareness, accountability, and action among youth and adults worldwide on behalf of ocean protection and resilience. In Heirs To Our Oceans, youth teach youth (and adults!) about human impacts on our oceans and waterways, about the importance of bringing all voices to the conservation table, and about how to support vulnerable communities.",
+   "website": "https://h2oo.org/"
+ },
+ {
+   "title": "Youth Impact Hub",
+   "opp_type": "Youth Program",
+   "focus_area": "social entrepreneurship, leadership, social impact, career readiness, business",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "California",
+   "description": "Youth Impact Hub supports the leadership of low-income youth of color in creating an equitable, life-affirming economy by providing socially innovative training, collaborative co-working space and access to networks and resources. Along with Hack the Hood, The Hidden Genius Project, and The David E. Glover Emerging Technology Center, Youth Impact Hub Oakland is a partner in Oakland Codes, a collaborative cohort organized by the San Francisco Foundation. Our collective vision is to open doors to opportunity, and foster an ecosystem for life-long success for Bay Area youth and their communities by collectively working at the intersections of tech, equity, and youth development, in order to influence the school, government, business and human service systems that shape their life outcomes.",
+   "website": "https://youthimpacthub.unitedrootsoakland.org/"
+ },
+ {
+   "title": "Poll Hero",
+   "opp_type": "Youth Program",
+   "focus_area": "social justice, politics, government, citizenship",
+   "deadline": "November 2020",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "The Poll Hero Project was founded by a group of Princeton University students, Denver East High School students, and a University of Chicago Booth School of Business graduate who care deeply about democracy and non-partisanship. We’re recruiting thousands of college and high school students to be paid poll workers to make the 2020 Election a success.",
+   "website": "https://www.pollhero.org/"
+ },
+ {
+   "title": "Our Ocean Youth Leadership Summit ",
+   "opp_type": "Youth Program",
+   "focus_area": "conference, climate action, environment & sustainability, conservation",
+   "deadline": "May 2021",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Global",
+   "description": "Heirs To Our Oceans will host the youth component of the 7th annual Our Ocean Conference in 2021. Our Ocean Youth Leadership Summit 2021 will be organized and facilitated by Heirs To Our Oceans and, for the first time in the history of the Summit, will be a hybrid of a virtual and an in-person event including youth from around the world. ",
+   "website": "https://h2oo.org/ooyls2020/"
+ },
+ {
+   "title": "My Brother's Keeper Alliance",
+   "opp_type": "Youth Program",
+   "focus_area": "service, black male youth, leadership, youth development",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "President Obama launched My Brother’s Keeper in February 2014 to address persistent opportunity gaps facing boys and young men of color and to ensure all youth can reach their full potential. In 2015 the My Brother’s Keeper Alliance (MBK Alliance) was launched, inspired by My Brother’s Keeper, to scale and sustain this mission. In late 2017, MBK Alliance became an initiative of the Obama Foundation. Within the Obama Foundation, MBK Alliance focuses on building safe and supportive communities for boys and young men of color where they feel valued and have clear pathways to opportunity.",
+   "website": "https://www.obama.org/mbka/"
+ },
+ {
+   "title": "Mock COP",
+   "opp_type": "Service Opportunity",
+   "focus_area": "conference, environment & sustainability, climate action, volunteer",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Global",
+   "description": "The Conference of the Parties (COP) to the United Nations Framework Convention on Climate Change (UNFCCC) is the big annual global event where countries of the world come together to progress collective action on climate change. COP26 is the 26th meeting but was delayed by a year due to COVID-19. Whilst the postponement is disappointing, it inadvertently provides an amazing opportunity to show the world what would happen if young people ran the COP, whilst also equipping and empowering youth around the world to engage their political leaders in COP26. Our Mock COP was run by young people and students involved in climate activism, supported by adults from youth-led organisations around the world. ",
+   "website": "https://www.mockcop.org/"
+ },
+ {
+   "title": "Resource Generation",
+   "opp_type": "Youth Program",
+   "focus_area": "social justice, advocacy, activism, citizenship",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "Resource Generation is a multiracial membership community of young people (18-35) with wealth and/or class privilege committed to the equitable distribution of wealth, land, and power. We organize young people with wealth and class privilege in the U.S. to become transformative leaders working towards the equitable distribution of wealth, land and power.",
+   "website": "https://resourcegeneration.org/"
+ },
+ {
+   "title": "LOG OFF",
+   "opp_type": "Service Opportunity",
+   "focus_area": "mental health, volunteer, advocacy, education",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "LOG OFF is a unique movement created by a group of teenagers with one common frustration. The movement works to structure an online community centered around discussing social media and digital usage for teenagers. There are multiple ways to get involved.",
+   "website": "https://www.logoffmovement.org/"
+ },
+ {
+   "title": "Girls Computing League",
+   "opp_type": "Youth Program",
+   "focus_area": "computer science, technology, artificial intelligence",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "GCL was founded in 2015 to make emerging technology education accessible to all students, regardless of gender, race, or socioeconomic status. We support students through hands-on learning and connecting educators to resources, to bridge the education gap at its root for generations to come. Our goal is to enact long-term change.",
+   "website": "https://www.girlscomputingleague.org/"
+ },
+ {
+   "title": "The AInnovation Business Summit",
+   "opp_type": "Youth Program",
+   "focus_area": "conference, computer science, technology, artificial intelligence",
+   "deadline": "May 2021",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "The AInnovation Business Summit works to educate the next generation of technologists, innovators, and leaders. From researchers to business trailblazers, this Summit is a unique opportunity to interact with the leaders in the field from companies and research institutions across the country. Girls Computing League will be holding an AIdeathon, where students can submit business pitches using AI to improve the world for a chance to win some of the thousands in cash prizes available!",
+   "website": "https://www.girlscomputingleague.org/"
+ },
+ {
+   "title": "J&H New Beginnings",
+   "opp_type": "Service Opportunity",
+   "focus_area": "volunteer, citizenship, leadership, global citizenship",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "J&H beginnings is a grassroots organization co-founded by two friends who met in high school and had the same vision to help people around the world through various humanitarian activities. Since our founding in 2017, we have been determined to make an impact. One event at a time, our mission is to raise awareness regarding significant issues around the world, while also fundraising with the sole purpose of putting together care packages to send out to those in need.",
+   "website": "https://www.jhnewbeginnings.org/"
+ },
+ {
+   "title": "Youth for Environmental Justice",
+   "opp_type": "Youth Program",
+   "focus_area": "environment & sustainability, climate action, social justice, leadership",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "California",
+   "description": "One of the unique components of CBE is our youth program. Since 1997, Youth for Environmental Justice (Youth EJ) has been organizing youth in Southeast Los Angeles around the issues of environmental and social justice. Our YEJ program has since expanded to Wilmington and Richmond, California. Youth EJ is committed to empower youth to take action to transform conditions in predominantly low-income communities of color. It does this through consciousness raising, organizing, and leadership development. Youth for Environmental Justice has Youth Action Clubs that meet at lunch in Huntington Park High School, South Gate High School, South East High School, Linda Marquez High School, Bell High School, Port of Los Angeles High School, Banning High School, Richmond High School, and De Anza High School.",
+   "website": "https://www.cbecal.org/organizing/southern-california/youth-and-adult-groups/"
+ },
+ {
+   "title": "Earth Uprising",
+   "opp_type": "Service Opportunity",
+   "focus_area": "environment & sustainability, climate action, social justice, advocacy, activism",
+   "deadline": "Year-Round",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "Earth Uprising is a global network of youth climate activists that provides peer-to-peer climate education, supports youth-led climate initiatives, and lobbies politicians to enact progressive climate action.",
+   "website": "https://earthuprising.org/"
+ },
+ {
+   "title": "Our Planet, Our Purpose: STEM for Changemaking Challenge",
+   "opp_type": "Awards Program",
+   "focus_area": "stem, innovation, environment & sustainability",
+   "deadline": "February 2021",
+   "grade_level": "9, 10, 11, 12",
+   "location": "Nationwide",
+   "description": "Are you a changemaker between the ages of 14-20 in the US working towards a sustainable planet? Join the movement of young people solving the world's most pressing environmental challenges! Ashoka and General Motors have partnered to create this innovation challenge. Twenty-five winning projects will receive $2,000 and an invitation to Ashoka's Changemaker Summit.",
+   "website": "https://network.changemakers.com/challenge/our-planet-our-purpose-2021/entry"
  }
 ]
