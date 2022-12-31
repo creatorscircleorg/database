@@ -236,6 +236,8 @@ class App extends React.Component {
             name: "deadline",
             label: "Application Deadline",
             options: {
+                display: false,
+                viewColumns: false,
                 filter: false, 
                 sort: true,
                 hint: "Date applications are due"
