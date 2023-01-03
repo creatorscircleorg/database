@@ -114,7 +114,7 @@ class App extends React.Component {
                 },
                 footer: {
                     position: "relative",
-                    left: "200%"
+                    left: "0px",
                 }
             },
             MuiIconButton: {
@@ -136,11 +136,6 @@ class App extends React.Component {
                    width: "100%",
                 },
             },
-            MUIDataTable: {
-                responsiveScroll: {
-                    maxHeight: '1100px'
-                }
-            },
             root: {
                 fontFamilySansSerif: "Arial",
             }
@@ -159,6 +154,8 @@ class App extends React.Component {
             name: "title",
             label: "Opportunity",
             options: {
+                setCellProps: () => ({ style: { maxWidth: "100px" }}),
+                customBodyRender: (data, type, row) => {return <div>{data}</div>},
                 filter: false, 
                 sort: false,
                 hint: "Program name and hyperlink",
@@ -181,6 +178,8 @@ class App extends React.Component {
             name: "opp_type",
             label: "Opportunity Type",
             options: {
+                setCellProps: () => ({ style: { maxWidth: "100px" }}),
+                customBodyRender: (data, type, row) => {return <div>{data}</div>},
                 filter: true, 
                 filterType: 'multiselect',
                 sort: false,
@@ -191,6 +190,8 @@ class App extends React.Component {
             name: "focus_area",
             label: "Focus Area",
             options: {
+                setCellProps: () => ({ style: { maxWidth: "100px" }}),
+                customBodyRender: (data, type, row) => {return <div>{data}</div>},
                 filter: true,
                 sort: false,
                 //sort focus areas tags in alphabetical order
@@ -233,20 +234,11 @@ class App extends React.Component {
             }
         },
         {
-            name: "deadline",
-            label: "Application Deadline",
-            options: {
-                display: false,
-                viewColumns: false,
-                filter: false, 
-                sort: true,
-                hint: "Date applications are due"
-            }
-        },
-        {
             name: "grade_level",
             label: "Grade Level",
             options: {
+                setCellProps: () => ({ style: { maxWidth: "100px" }}),
+                customBodyRender: (data, type, row) => {return <div>{data}</div>},
                 filter: true, 
                 sort: false, 
                 filterOptions: {
@@ -269,6 +261,8 @@ class App extends React.Component {
             name: "location",
             label: "Location",
             options: {
+                setCellProps: () => ({ style: { maxWidth: "100px" }}),
+                customBodyRender: (data, type, row) => {return <div>{data}</div>},
                 filter: true, 
                 filterType: "multiselect",
                 sort: false,
@@ -318,6 +312,8 @@ class App extends React.Component {
             name: "description",
             label: "Description",
             options: {
+                setCellProps: () => ({ style: { maxWidth: "300px"}}),
+                customBodyRender: (data, type, row) => {return <div>{data}</div>},
                 filter: false, 
                 sort: false,
                 hint: "Summary of opportunity",
@@ -338,7 +334,7 @@ class App extends React.Component {
         filterType: 'dropdown',
         selectableRows: 'none',
         rowsPerPage: 5,
-        responsive: 'standard',
+        responsive: 'scrollFullHeight',
         rowsPerPageOptions: [5, 10, 15, 25],
         isRowSelectable: (dataIndex) => {
             return false;
@@ -359,7 +355,7 @@ class App extends React.Component {
     };
 
     return (
-        <div>
+        <div class="table container">
             <MuiThemeProvider theme={
                 this.getMuiTheme()
             }>
