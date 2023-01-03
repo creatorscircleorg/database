@@ -113,7 +113,7 @@ class App extends React.Component {
                     fontFamily: "Arial",
                 },
                 footer: {
-                    position: "relative",
+                    position: "absolute",
                     left: "0px",
                 }
             },
@@ -130,10 +130,10 @@ class App extends React.Component {
             },
             MuiTableFooter: {
                 root: {
-                   position: "fixed",
+                   position: "relative",
                    bottom: "0px",
                    backgroundColor: "white",
-                   width: "100%",
+                   width: "1100px",
                 },
             },
             root: {
@@ -355,7 +355,7 @@ class App extends React.Component {
     };
 
     return (
-        <div class="table container">
+        <div>
             <MuiThemeProvider theme={
                 this.getMuiTheme()
             }>
