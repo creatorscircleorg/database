@@ -113,7 +113,7 @@ class App extends React.Component {
                     fontFamily: "Arial",
                 },
                 footer: {
-                    position: "absolute",
+                    position: "relative",
                     left: "0px",
                 }
             },
@@ -130,10 +130,10 @@ class App extends React.Component {
             },
             MuiTableFooter: {
                 root: {
-                   position: "relative",
+                   position: "fixed",
                    bottom: "0px",
                    backgroundColor: "white",
-                   width: "1100px",
+                   width: "100%",
                 },
             },
             root: {
