@@ -26,19 +26,6 @@
    "FIELD11": ""
  },
  {
-   "title": "Bausch + Lomb Honorary Science Award",
-   "opp_type": "Awards Program",
-   "focus_area": "science",
-   "deadline": "June 2023",
-   "grade_level": "11",
-   "location": "Nationwide",
-   "description": "Every year since 1933, Bausch + Lomb honors outstanding high school science students with the Bausch + Lomb Honorary Science Award.",
-   "website": "http://www.bausch.com/our-company/community-relationships/science-award-and-scholarships",
-   "FIELD9": "",
-   "FIELD10": "",
-   "FIELD11": ""
- },
- {
    "title": "Bennington College Young Writers Award",
    "opp_type": "Awards Program",
    "focus_area": "writing, poetry",
@@ -1627,7 +1614,7 @@
  {
    "title": "Ampronix Scholarship Program",
    "opp_type": "Scholarship Program",
-   "focus_area": " healthcare",
+   "focus_area": "healthcare",
    "deadline": "May 2023",
    "grade_level": "12",
    "location": "Nationwide",
@@ -1653,7 +1640,7 @@
  {
    "title": "Apprentice Ecologist Initiative",
    "opp_type": "Scholarship Program",
-   "focus_area": " environment & sustainability",
+   "focus_area": "environment & sustainability",
    "deadline": "December 2023",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -1900,7 +1887,7 @@
  {
    "title": "Diller Tikkun Olam Scholarship",
    "opp_type": "Scholarship Program",
-   "focus_area": "leadership,  jewish youth, public service",
+   "focus_area": "leadership, jewish youth, public service",
    "deadline": "January 2023",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -1913,7 +1900,7 @@
  {
    "title": "Dr. Juan Andrade, Jr. Scholarship",
    "opp_type": "Scholarship Program",
-   "focus_area": " leadership, hispanic, latinx, democracy",
+   "focus_area": "leadership, hispanic, latinx, democracy",
    "deadline": "December 2023",
    "grade_level": "12",
    "location": "Nationwide",
@@ -1978,7 +1965,7 @@
  {
    "title": "Gloria Baron Prize for Young Heroes",
    "opp_type": "Scholarship Program",
-   "focus_area": "leadership,  environment & sustainability, diversity",
+   "focus_area": "leadership, environment & sustainability, diversity",
    "deadline": "April 2023",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -2290,7 +2277,7 @@
  {
    "title": "Alley Cat Allies",
    "opp_type": "Service Opportunity",
-   "focus_area": " animal welfare",
+   "focus_area": "animal welfare",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -2368,7 +2355,7 @@
  {
    "title": "American Foundation for Suicide Prevention",
    "opp_type": "Service Opportunity",
-   "focus_area": " suicide prevention, mental health",
+   "focus_area": "suicide prevention, mental health",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -2706,7 +2693,7 @@
  {
    "title": "Chabot Space & Science Center Galaxy Explorers",
    "opp_type": "Service Opportunity",
-   "focus_area": "stem, science,  public speaking",
+   "focus_area": "stem, science, public speaking",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "California",
@@ -2836,7 +2823,7 @@
  {
    "title": "DC Central Kitchen",
    "opp_type": "Service Opportunity",
-   "focus_area": "food justice,  homeless, poverty alleviation",
+   "focus_area": "food justice, homeless, poverty alleviation",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Washington D.C.",
@@ -2875,7 +2862,7 @@
  {
    "title": "Empowerment Resource Center",
    "opp_type": "Service Opportunity",
-   "focus_area": "healthcare ",
+   "focus_area": "healthcare",
    "deadline": "Year-Round",
    "grade_level": "11, 12",
    "location": "Georgia",
@@ -3265,7 +3252,7 @@
  {
    "title": "Juntos",
    "opp_type": "Service Opportunity",
-   "focus_area": "immigration,  immigrant youth",
+   "focus_area": "immigration, immigrant youth",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Pennsylvania",
@@ -3681,7 +3668,7 @@
  {
    "title": "Project H.O.M.E.",
    "opp_type": "Service Opportunity",
-   "focus_area": "public service,  homeless, poverty alleviation",
+   "focus_area": "public service, homeless, poverty alleviation",
    "deadline": "Year-Round",
    "grade_level": "11, 12",
    "location": "Pennsylvania",
@@ -3733,7 +3720,7 @@
  {
    "title": "Rescuing Leftover Cuisine",
    "opp_type": "Service Opportunity",
-   "focus_area": " food justice",
+   "focus_area": "food justice",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -3746,7 +3733,7 @@
  {
    "title": "Rosie Riveters Mentorship Program",
    "opp_type": "Service Opportunity",
-   "focus_area": "stem, girls,  mentorship",
+   "focus_area": "stem, girls, mentorship",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Virginia",
@@ -3863,7 +3850,7 @@
  {
    "title": "Spells Writing Lab",
    "opp_type": "Service Opportunity",
-   "focus_area": "mentorship,  literacy",
+   "focus_area": "mentorship, literacy",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Pennsylvania",
@@ -4149,7 +4136,7 @@
  {
    "title": "The Trevor Project",
    "opp_type": "Service Opportunity",
-   "focus_area": "lgbtq+,  mental health",
+   "focus_area": "lgbtq+, mental health",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -4162,7 +4149,7 @@
  {
    "title": "The United Nations Foundation",
    "opp_type": "Service Opportunity",
-   "focus_area": " united nations",
+   "focus_area": "united nations, global citizenship",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -4316,9 +4303,9 @@
    "FIELD11": ""
  },
  {
-   "title": "Volunteers are essential for Urban Harvest to fulfill its mission. Whether as a roustabout at the market or volunteering at a school garden build, we need your help!",
+   "title": "World Wildlife",
    "opp_type": "Service Opportunity",
-   "focus_area": "advocacy, petition, animal welfare,  conservation",
+   "focus_area": "advocacy, petition, animal welfare, conservation",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -4461,7 +4448,7 @@
  {
    "title": "Rustic Pathways",
    "opp_type": "Study Abroad Program",
-   "focus_area": "global citizenship,  travel, sustainable development",
+   "focus_area": "global citizenship, travel, sustainable development",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Global",
@@ -8491,7 +8478,7 @@
  {
    "title": "LOG OFF",
    "opp_type": "Service Opportunity",
-   "focus_area": "mental health,  advocacy, education",
+   "focus_area": "mental health, advocacy, education",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -8530,7 +8517,7 @@
  {
    "title": "J&H New Beginnings",
    "opp_type": "Service Opportunity",
-   "focus_area": " citizenship, leadership, global citizenship",
+   "focus_area": "citizenship, leadership, global citizenship",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Nationwide",
@@ -8842,7 +8829,7 @@
  {
    "title": "SEWF Youth Forum",
    "opp_type": "Youth Program",
-   "focus_area": "conference, entrepreneurship, business, collaboration ",
+   "focus_area": "conference, entrepreneurship, business, collaboration",
    "deadline": "September 2023",
    "grade_level": "9, 10, 11, 12",
    "location": "Global",
@@ -9102,7 +9089,7 @@
  {
    "title": "Loss and Damage Youth Coalition",
    "opp_type": "Youth Program",
-   "focus_area": " environment & sustainability, climate action, advocacy, global citizenship",
+   "focus_area": "environment & sustainability, climate action, advocacy, global citizenship",
    "deadline": "Year-Round",
    "grade_level": "9, 10, 11, 12",
    "location": "Global",
@@ -9635,7 +9622,7 @@
  {
    "title": "Good Tidings Foundation Community Service Scholarship",
    "opp_type": "Scholarship Program",
-   "focus_area": "public service, citizenship, low-income ",
+   "focus_area": "public service, citizenship, low-income",
    "deadline": "November 2023",
    "grade_level": "12",
    "location": "California",
