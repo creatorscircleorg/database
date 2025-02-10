@@ -1,47 +1,6 @@
 {
-  "name": "cc_database",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://creatorscircleorg.github.io/database",
   "dependencies": {
-    "@emotion/react": "^11.11.0",
-    "@emotion/styled": "^11.11.0",
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.2",
-    "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.13.3",
-    "@mui/styles": "^5.13.2",
-    "bootstrap": "^4.5.3",
-    "gh-pages": "^5.0.0",
-    "mui-datatables": "^2.15.0",
-    "react": "^17.0.2",
-    "react-bootstrap": "^1.4.0",
-    "react-dom": "^16.14.0",
-    "react-ga": "^2.7.0",
-    "react-router-dom": "^5.2.0",
+    "package.json": "^2.0.1",
     "react-scripts": "^5.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
