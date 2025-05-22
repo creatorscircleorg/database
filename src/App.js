@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MUIDataTable from 'mui-datatables';
 import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
+import Papa from 'papaparse';  // Import PapaParse for CSV parsing
 import ReactGA from 'react-ga';
 
 const all_locations = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
@@ -102,6 +103,45 @@ function analyze_type(data) { //data analytics
 }
 
 class App extends React.Component {
+    state = {
+        data: [],
+    };
+
+    componentDidMount() {
+        this.fetchAndUpdateData();
+        initializeReactGA();
+    }
+
+    fetchAndUpdateData = () => {
+        const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSqoHrzvRfls6cfOX6CjFwuhcL9Ce8ivBhmOrZLikicHeYdfpzNUYR4a9JkVbY-YqCFisptbKK3iqLc/pub?output=csv";
+        
+        // Fetch the CSV file from Google Sheets
+        fetch(csvUrl)
+            .then(response => response.text())
+            .then(csvData => {
+                // Convert CSV to JSON using PapaParse
+                Papa.parse(csvData, {
+                    header: true,
+                    dynamicTyping: true,
+                    skipEmptyLines: true,
+                    complete: (result) => {
+                        // Update the data in state
+                        this.setState({ data: result.data });
+
+                        // After updating the data, you can store it in your `datafile.json` if needed
+                        // Here you would normally save it back to a file, but in a frontend app, it's handled in memory
+                        // This part is only to demonstrate the conversion
+                        console.log("Parsed JSON Data: ", result.data);
+                    },
+                    error: (error) => {
+                        console.error("Error parsing CSV: ", error);
+                    }
+                });
+            })
+            .catch((error) => {
+                console.error("Error fetching CSV: ", error);
+            });
+    }
 
     getMuiTheme = () => createMuiTheme({
         overrides: {
@@ -143,7 +183,7 @@ class App extends React.Component {
     })
 
   render() {
-    const data = require('./datafile.json');
+    const data = this.state.data;
 
     find_focus_areas(data);
 
@@ -237,26 +277,19 @@ class App extends React.Component {
             name: "grade_level",
             label: "Grade Level",
             options: {
-                setCellProps: () => ({ style: { maxWidth: "100px" }}),
-                customBodyRender: (data, type, row) => {return <div>{data}</div>},
-                filter: true, 
-                sort: false, 
-                filterOptions: {
-                    names: [9, 10, 11, 12],
-                    logic(grade, filter) {
-                        for (let i = 0; i < filter.length; i++) {
-                            let val = filter[i];
-                            if (!grade.includes(val)) {
-                                return true;
-                            }
-                        }
-                        return false;
-                    }
-                },
+                filter: true,
                 filterType: "multiselect",
-                hint: "Grade level to which this opportunity is open"
+                filterOptions: {
+                names: ["9", "10", "11", "12"],
+                logic(gradeLevel, filter) {
+                    if (filter.length === 0) return false;
+                    const gradeStr = gradeLevel?.toString() || "";
+                    return !filter.some(val => gradeStr.includes(val));
+                }
+                }
             }
-        },
+            }
+            ,
         {
             name: "location",
             label: "Location",
@@ -322,15 +355,15 @@ class App extends React.Component {
     ];
 
     const options = {
-    	download: true,
-    	downloadOptions: {
-    		filename: 'CreatorsCircle Opportunities.csv',
-    		separator: ',',
-    		filterOptions: {
-    			useDisplayedColumnsOnly: true,
-    			useDisplayedRowsOnly: true,
-    		}
-    	},
+        download: true,
+        downloadOptions: {
+            filename: 'CreatorsCircle Opportunities.csv',
+            separator: ',',
+            filterOptions: {
+                useDisplayedColumnsOnly: true,
+                useDisplayedRowsOnly: true,
+            }
+        },
         filterType: 'dropdown',
         selectableRows: 'none',
         rowsPerPage: 5,
